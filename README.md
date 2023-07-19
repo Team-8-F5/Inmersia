@@ -2,7 +2,7 @@
 
 ### Inmersia 
 
-![INMERSIA LOGO](image/LOGO.png)
+![INMERSIA LOGO]("image/LOGO.png")
 
 ## Description
 
