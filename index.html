@@ -5,19 +5,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Pequeña Mascota</title>
+    <title>Inmersa</title>
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
     <link
         href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
         rel="stylesheet" />
     <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="recursos/FAVICON-icons8-cat-footprint-ios-16-filled-32.png">
-    <!-- <script src="dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css"> -->
+  <script src="dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css"> 
 </head>
 
 <body id="top">
@@ -27,12 +27,15 @@
 
     <header class="header" data-header>
         <div class="container">
-            <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
                 <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
                 <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
             </button>
-
-            <a class="logo">Mi Pequeña Mascota</a>
+           <!--  Agregar tu logo aquí -->
+           <a class="logo" href="#home">
+            <img src="assets/images/logo_sinfondo.png" style="width: 50%;">
+        </a>
+        
 
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
@@ -45,7 +48,7 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a class="navbar-link" data-nav-link>Noticias</a>
+                        <a class="navbar-link" data-nav-link>Colecciones</a>
                     </li>
 
                     <li class="navbar-item">
@@ -53,7 +56,7 @@
                     </li>
                 </ul>
 
-                <a class="navbar-action-btn">Log In</a>
+                <a class="navbar-action-btn">Colecciones</a>
             </nav>
 
             <div class="header-actions">
@@ -69,7 +72,7 @@
                         <img onclick="showCart(this)" class="cart" src="recursos/cart-shopping-solid.svg" alt="">
                         <p class="count-product">0</p>
                     </div>
-                    <div class="cart-products" id="products-id">
+                     <div class="cart-products" id="products-id">
                         <p class="close-btn" onclick="closeBtn()">X</p>
                         <h3>Mi carrito</h3>
                         <div class="card-items">
@@ -80,27 +83,42 @@
                         </div>
                     </div>
 
-                    <!-- <button class="action-btn carrito" aria-label="cart">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                    <span class="btn-badge">0</span>
-                </button> -->
+                 
                 </div>
             </div>
-    </header>
+    </header> -
     <main>
         <article>
 
             <!-- HERO -->
-            <section class="section hero has-bg-image" id="home" aria-label="home"
-                style="background-image: url('./assets/images/hero-banner.jpg')">
-            </section>
+                <section class="section hero has-bg-image" id="home" aria-label="home"
+                    style="background-image: url('./assets/images/imagen\ portada\ alacala.jpeg');width:100%; height: 50%; margin-top: 280px;">
+                </section>  
+
+
+
+            <!-- <section class="section hero has-bg-image" id="home" aria-label="home"
+                style="background-image: url('./assets/images/imagen\ portada\ alacala.jpeg')">
+            </section> -->
+
+                <!-- <section class="section hero has-bg-image" id="home" aria-label="home"
+                    style="background-image: url('./assets/images/imagen\ portada\ alacala.jpeg');width:77%; height: 50%;margin-left:170px; margin-top: 280px;">
+                </section>  -->
+           
+                
+                <!-- <section class="section hero" id="home" aria-label="home">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FMJ3lrRs16I?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    Contenido adicional para la sección HERO si es necesario
+</section> -->
+
 
             <!-- CATEGORY -->
             <section class="section category" aria-label="category">
                 <div class="container">
+                  
+
                     <h2 class="h2 section-title">
-                        <span class="span">Top</span> categorias
+                        <span class="span">Top</span> Colecciones
                     </h2>
 
                     <ul class="has-scrollbar">

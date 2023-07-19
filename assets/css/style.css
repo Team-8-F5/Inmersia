@@ -85,6 +85,7 @@ span,
 button,
 ion-icon {
     display: block;
+    color:#000;
 }
 
 a {
@@ -241,13 +242,13 @@ body {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-    outline: 2px solid var(--portland-orange);
+    outline: 2px solid var(--portland-white);
     border-radius: var(--radius-10);
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
     border-radius: var(--radius-10);
-    background-color: var(--portland-orange);
+    background-color: var(--portland-white);
     border: 2px solid var(--white);
 }
 
@@ -277,7 +278,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--orange);
     padding-block: 20px;
     z-index: 4;
 }
@@ -318,30 +319,34 @@ body {
 .header-actions {
     display: flex;
     gap: 15px;
+    background-color: #fff;
 }
 
 .header .action-btn {
     position: relative;
     font-size: 22px;
     transition: var(--transition-1);
+    background-color: #fff;
 }
 
 .header .btn-badge {
     position: absolute;
     top: -8px;
     right: -10px;
-    background-color: var(--portland-orange);
+    background-color: white;
     color: var(--white);
     font-size: var(--fs-8);
     min-width: 18px;
     height: 18px;
     line-height: 18px;
     border-radius: 50px;
+    background-color: #fff;
 }
 
 .nav-toggle-btn:is(:hover, :focus),
 .header .action-btn:is(:hover, :focus) {
     transform: scale(1.1);
+    background-color: #fff;
 }
 
 .navbar {
@@ -349,7 +354,7 @@ body {
     top: 85px;
     left: -320px;
     bottom: 0;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     max-width: 320px;
     width: 100%;
     padding: 20px 10px;
@@ -357,17 +362,20 @@ body {
     transition: 0.25s var(--cubic-out);
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: #fff;
 }
 
 .navbar.active {
     transform: translateX(320px);
     transition-timing-function: var(--cubic-in);
+    background-color: #fff;
 }
 
 .navbar-link {
     color: var(--eerie-black);
     font-size: var(--fs-6);
     padding: 10px 15px;
+    background-color: #fff;
 }
 
 .navbar-action-btn {
@@ -377,10 +385,11 @@ body {
     right: 0;
     padding: 15px;
     background-color: var(--sonic-silver);
-    color: var(--white);
+    color: var(--black);
     font-weight: var(--fw-700);
     text-transform: uppercase;
     text-align: center;
+    background-color: #fff;
 }
 
 /*-----------------------------------*\
@@ -392,6 +401,7 @@ body {
     min-height: 360px;
     background-position: left;
     text-align: center;
+    
 }
 
 .hero-title .span {
@@ -410,6 +420,19 @@ body {
 .hero .btn:is(:hover, :focus) {
     background-color: var(--portland-orange);
 }
+/* imagen */
+.imagen-container {
+    position: relative; /* Para que el contenedor sea el contexto para la posición */
+    display: inline-block; /*Para que el contenedor se ajuste al tamaño de la imagen*/
+  }
+  
+  .imagen-container img {
+    transition: transform 0.3s; /* Animación suave de transición */
+  }
+  
+  .imagen-container:hover img {
+    transform: scale(1.5); /* Aumentar el tamaño de la imagen en un 50% */
+  }
 
 /*-----------------------------------*\
   #CATEGORY
@@ -497,6 +520,23 @@ body {
     display: flex;
 }
 
+/* Centrar la imagen del principio
+.hero-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Asegurar que la imagen del principio cubra todo el ancho de la sección */
+/* .hero img {
+    width: 100%;
+    height: auto; */
+/* }  */
+
+
+
+
+
 
 .header-section{
     display: flex;
@@ -504,6 +544,7 @@ body {
     margin: auto;
     align-items: center;
     position: relative;
+    background-color: #fff;
 }
 .header-section div{
     position: relative;
@@ -659,6 +700,7 @@ body {
     text-align: center;
 }
 
+
 .restar-cantidad{
     background-color: orangered;
     color: aliceblue;
@@ -800,6 +842,10 @@ p.author a {
     max-width: max-content;
     margin-inline: auto;
 }
+
+
+
+
 
 /*-----------------------------------*\
   #FORMULARIO
@@ -1005,7 +1051,7 @@ textarea {
 .contact-item ion-icon {
     flex-shrink: 0;
     font-size: 22px;
-    color: var(--portland-orange);
+    color: var(--portland-white);
 }
 
 .social-list {
@@ -1022,7 +1068,7 @@ textarea {
 }
 
 .social-link:is(:hover, :focus) {
-    background-color: var(--portland-orange);
+    /* background-color: var(--portland-orange); */
     color: var(--white);
 }
 
@@ -1067,7 +1113,8 @@ textarea {
     position: fixed;
     bottom: 10px;
     right: 20px;
-    background-color: var(--portland-orange);
+    /* background-color: var(--portland-orange); */
+    background-color: #fff;
     color: var(--white);
     font-size: 25px;
     padding: 10px;
@@ -1116,6 +1163,7 @@ textarea {
 
     .grid-list {
         grid-template-columns: 1fr 1fr;
+        background-color: #fff;
     }
 
     /**
@@ -1127,6 +1175,7 @@ textarea {
         padding-inline-start: 20px;
         justify-content: flex-start;
         align-items: center;
+        background-color: #fff;
     }
 
     /**
@@ -1180,8 +1229,8 @@ textarea {
     }
 
     .product-card .card-action-btn:is(:hover, :focus) {
-        background-color: var(--portland-orange);
-        border-color: var(--portland-orange);
+        background-color: var(--portland-white);
+        border-color: var(--portland-white);
         color: var(--white);
     }
 
@@ -1336,11 +1385,13 @@ textarea {
     .nav-toggle-btn,
     .navbar-action-btn {
         display: none;
+        background-color: #fff;
     }
 
     .header {
         --color: var(--white);
         background: none;
+        /* background-color: #fff; */
     }
 
     .header.active {
@@ -1351,10 +1402,13 @@ textarea {
     .header .logo,
     .header .action-btn {
         color: var(--color);
+        background-color: #fff;
     }
 
     .header .action-btn.user {
         display: block;
+        color:#000;
+        background-color: #fff;
     }
 
     .logo {
@@ -1365,6 +1419,7 @@ textarea {
     .navbar.active {
         all: unset;
         margin-inline-end: auto;
+        background-color: #fff;
     }
 
     .navbar-list {
@@ -1373,15 +1428,16 @@ textarea {
     }
 
     .navbar-link {
-        color: var(--color);
+        color:#000;
         --fs-6: 1.7rem;
         font-weight: var(--fw-700);
         transition: var(--transition-1);
+        background-color: #fff;
     }
 
     .header.active .navbar-link:is(:hover, :focus) {
-        color: var(--portland-orange);
-    }
+        color: white;
+        background-color: #fff;
 
     /**
    * HERO
@@ -1389,6 +1445,7 @@ textarea {
 
     .hero {
         margin-block-start: 0;
+        background-color: #fff;
     }
 
     /**
