@@ -520,6 +520,9 @@ body {
     font-family: system-ui;
     line-height: 18px;
 }
+/*-----------------------------------*\
+#SolCart
+\*-----------------------------------*/
 
 .cart{
     
@@ -551,7 +554,7 @@ body {
     padding: 60px 0px 30px 0px;
     display: flex;
     flex-wrap: wrap;
-    background-color:  #157FE6;
+    background-color: white;
     text-align: center;
     justify-content: center;
     gap: 33px;
@@ -575,8 +578,9 @@ body {
 }
 
 .carts img{
-    width: 30%;
-    margin-left: 125px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 .carts p{
@@ -594,7 +598,7 @@ body {
     font-size: 25px;
     top: 0;
     right: 0px;
-    background-color:#157FE6;
+    background-color:#B457A0;
     color: #fff;
     
 }
