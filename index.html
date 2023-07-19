@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Pequeña Mascota</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="recursos/FAVICON-icons8-cat-footprint-ios-16-filled-32.png">
+    <!-- <script src="dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css"> -->
+</head>
+
+<body id="top">
+    <!-- 
+    - #HEADER
+-->
+
+    <header class="header" data-header>
+        <div class="container">
+            <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+            </button>
+
+            <a class="logo">Mi Pequeña Mascota</a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#shop" class="navbar-link" data-nav-link>Productos</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" data-nav-link>Noticias</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" data-nav-link>Contacto</a>
+                    </li>
+                </ul>
+
+                <a class="navbar-action-btn">Log In</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="action-btn" aria-label="Search">
+                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn user" aria-label="User">
+                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="header-section container">
+                    <div>
+                        <img onclick="showCart(this)" class="cart" src="recursos/cart-shopping-solid.svg" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                        </div>
+                        <div class="toPay">
+                            <h2>Total: <strong class="price-total">0</strong>€</h2>
+                            <a class="btnPagar" href="">Pagar</a>
+                        </div>
+                    </div>
+
+                    <!-- <button class="action-btn carrito" aria-label="cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="btn-badge">0</span>
+                </button> -->
+                </div>
+            </div>
+    </header>
+    <main>
+        <article>
+
+            <!-- HERO -->
+            <section class="section hero has-bg-image" id="home" aria-label="home"
+                style="background-image: url('./assets/images/hero-banner.jpg')">
+            </section>
+
+            <!-- CATEGORY -->
+            <section class="section category" aria-label="category">
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        <span class="span">Top</span> categorias
+                    </h2>
+
+                    <ul class="has-scrollbar">
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-1.jpg" width="330" height="300" loading="lazy"
+                                        alt="Cat Food" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Comida para Gatos</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-2.jpg" width="330" height="300" loading="lazy"
+                                        alt="Cat Toys" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Juguetes para Gatos</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-3.jpg" width="330" height="300" loading="lazy"
+                                        alt="Dog Food" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Comida para Perros</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-4.jpg" width="330" height="300" loading="lazy"
+                                        alt="Dog Toys" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Juguetes para Perros</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-5.jpg" width="330" height="300" loading="lazy"
+                                        alt="Dog Sumpplements" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Suplementos para Perros</a>
+                                </h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- OFERTAS -->
+            <section class="section offer" aria-label="offer">
+                <div class="container">
+                    <ul class="grid-list">
+                        <li>
+                            <div class="offer-card has-bg-image img-holder" style="
+                            background-image: url('./images/coliseo.png');
+                            --width: 540;
+                            --height: 374;
+                                 ">
+                                <p class="card-subtitle">Patrimonio Historico</p>
+                                <h3 class="h3 card-title">
+                                    <span class="span"></span>
+                                </h3>
+
+                                <a class="btn">Leer Mas</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="offer-card has-bg-image img-holder" style="
+                             background-image: url('./images/museo.jpg');
+                            --width: 540;
+                            --height: 374;
+                             ">
+                                <p class="card-subtitle">Patrimonio Moderno</p>
+
+                                <h3 class="h3 card-title">
+                                    <span class="span"></span>
+                                </h3>
+
+                                <a class="btn">Leer Mas</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="offer-card has-bg-image img-holder" style="
+                            background-image: url('./images/arquitectura.jpg');
+                            --width: 540;
+                            --height: 374;
+                                 ">
+                                <p class="card-subtitle">Aquitectura Avanzada</p>
+                                <h3 class="h3 card-title">
+                                    <span class="span"></span>
+                                </h3>
+
+                                <a class="btn">Leer Mas</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PRODUCTOSSOL -->
+            <section class="Productos">
+                <div class="products">
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="1" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">Iglesia Románica</span>
+                        <div>
+                            <img src="recursos/r1.png" alt="">
+                        </div>
+
+                        <p class="title">Iglesia Románica siglo VI</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="2" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="3" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="4" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="5" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <span class="titulo-item">HILLS</span>
+                        <div>
+                            <img src="recursos/hills.png" alt="">
+                        </div>
+
+                        <p class="title">HILLS PRESCRIPTION DIET <br>
+                            METABOLIC PIENSO PARA PERROS</p>
+                        <div>
+                            <p><span>20</span>€</p>
+                        </div>
+                        <a href="" data-id="6" class="btn-add-cart">Añadir al carrito</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICIOS -->
+
+            <section class="section service" aria-label="service">
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        <span class="span">Lo que tu mascota necesita,</span> cuando lo necesitan.
+                    </h2>
+
+                    <ul class="grid-list">
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/service-icon-1.png" width="70" height="70" loading="lazy"
+                                        alt="service icon" />
+                                </figure>
+
+                                <h3 class="h3 card-title">Envio Gratis</h3>
+
+                                <p class="card-text">
+                                    Envio gratis en pedidos mayores a € 35.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/service-icon-2.png" width="70" height="70" loading="lazy"
+                                        alt="service icon" />
+                                </figure>
+
+                                <h3 class="h3 card-title">Devolucion en 30 Dias</h3>
+
+                                <p class="card-text">
+                                    5% de descuento en todos los pedidos
+                                    futuros.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/service-icon-3.png" width="70" height="70" loading="lazy"
+                                        alt="service icon" />
+                                </figure>
+
+                                <h3 class="h3 card-title">Pagos Seguros</h3>
+
+                                <p class="card-text">
+                                    Pago en linea completamente seguro, respetando los
+                                    estandares de seguridad.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/service-icon-4.png" width="70" height="70" loading="lazy"
+                                        alt="service icon" />
+                                </figure>
+
+                                <h3 class="h3 card-title">Soporte 24/7</h3>
+
+                                <p class="card-text">
+                                    Compre en línea para recibir pedidos de más de € 35 enviados
+                                    rápido y gratis.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="cta has-bg-image" aria-label="cta"
+                style="background-image: url('./assets/images/cta-bg.jpg')">
+                <div class="container">
+                    <figure class="cta-banner">
+                        <img src="./assets/images/cta-banner.png" width="900" height="660" loading="lazy" alt="cat"
+                            class="w-100" />
+                    </figure>
+
+                    <div class="cta-content">
+                        <img src="./assets/images/cta-icon.png" width="120" height="35" loading="lazy"
+                            alt="taste guarantee" class="img" />
+
+                        <h2 class="h2 section-title">
+                            Pruébalo, ámalo o lo reemplazaremos... ¡Garantizado!
+                        </h2>
+
+                        <p class="section-text">
+                            En Mi Pequeña Mascota, creemos que a tu perro y gato les
+                            encantará su comida tanto que si no lo hacen... te ayudaremos a
+                            encontrar un reemplazo. Esa es nuestra garantía de sabor.
+                        </p>
+
+                        <a class="btn">Saber Más</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FORMULARIO -->
+            <section class="section brand" aria-label="brand">
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        <span class="span">Formulario</span> Contacto
+                    </h2>
+                    <div class="contenedorFormulario">
+                        <form action="" method="post" class="formulario" id="formulario">
+                            <!-- Grupo: Nombre -->
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <label for="nombre" class="formulario__label">Nombre</label>
+
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                                        placeholder="John Doe" />
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">El Nombre tiene que ser de 3 a 40 dígitos y solo
+                                        letras.</p>
+                                </div>
+                                <p class="formulario__input-error">
+                                    El Nombre tiene que ser de 3 a 40 dígitos y solo letras.
+                                </p>
+                            </div>
+
+                            <!-- Grupo: Apellido -->
+                            <div class="formulario__grupo" id="grupo__apellido">
+                                <label for="apellido" class="formulario__label">Apellido</label>
+
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="apellido" id="apellido"
+                                        placeholder="López Ruiz" />
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">Los Apellidos tiene que ser de 3 a 40 dígitos y
+                                        solo letras.</p>
+                                </div>
+                                <p class="formulario__input-error">
+                                    Los Apellidos tiene que ser de 3 a 40 dígitos y solo letras.
+                                </p>
+                            </div>
+
+                            <!-- Grupo: Teléfono -->
+                            <div class="formulario__grupo" id="grupo__telefono">
+                                <label for="telefono" class="formulario__label">Movil</label>
+
+                                <div class="formulario__grupo-input">
+                                    <input type="tel" class="formulario__input" name="telefono" id="telefono"
+                                        placeholder="654 987 432" />
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">El telefono solo puede contener numeros y el
+                                        maximo son 14 dígitos.</p>
+                                </div>
+                                <p class="formulario__input-error">
+                                    El telefono solo puede contener numeros y el maximo son 14
+                                    dígitos.
+                                </p>
+                            </div>
+
+                            <!-- Grupo: Correo Electronico -->
+                            <div class="formulario__grupo" id="grupo__correo">
+                                <label for="correo" class="formulario__label">Email</label>
+
+                                <div class="formulario__grupo-input">
+                                    <input type="email" class="formulario__input" name="correo" id="correo"
+                                        placeholder="correo@correo.com" />
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">El correo solo puede contener letras, numeros,
+                                        puntos, guiones y guion bajo.</p>
+                                </div>
+                                <p class="formulario__input-error">
+                                    El correo solo puede contener letras, numeros, puntos,
+                                    guiones y guion bajo.
+                                </p>
+                            </div>
+
+                            <!-- Grupo: Comentario -->
+                            <div class="formulario__grupo" id="grupo__comentario">
+                                <label for="comentario" class="formulario__label">Comentario</label>
+                                <div class="formulario__grupo-input">
+                                    <textarea class="formulario__input" id="comentario" name="comentario"
+                                        -form="formulario" placeholder="Cuéntanos cómo podemos ayudarte.."></textarea>
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">El comentario debe tener minimo 5 y maximo 200
+                                        letras.</p>
+                                </div>
+                                <p class="formulario__input-error">
+                                    El comentario debe tener minimo 5 y maximo 200 letras.
+                                </p>
+                            </div>
+
+                            <!-- Grupo: Terminos y Condiciones -->
+                            <div class="formulario__grupo" id="grupo__terminos">
+                                <label class="formulario__label">
+                                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" />
+                                    Acepto los Terminos y Condiciones
+                                </label>
+                            </div>
+
+                            <!-- Grupo: mensaje cuando no rellena formulario -->
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <b>Error:</b> Por favor rellena el formulario correctamente.
+                                </p>
+                            </div>
+
+                            <!-- Grupo: Boton -->
+                            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                <button type="submit" class="formulario__btn">Enviar</button>
+                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                                    Formulario enviado exitosamente!
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+        <div class="footer-top section">
+            <div class="container">
+                <div class="footer-brand">
+                    <a class="logo">Mi Pequeña Mascota</a>
+
+                    <p class="footer-text">
+                        Tienes una pregunta, contactanos a:
+                        <a href="mailto:support@gmail.com" class="link">support@gmail.com</a>
+                    </p>
+
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                            <address class="address">Madrid, España</address>
+                        </li>
+
+                        <li class="contact-item">
+                            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                            <a href="tel:+34623567891" class="contact-link">(+34) 623-567-891</a>
+                        </li>
+                    </ul>
+
+                    <ul class="social-list">
+                        <li>
+                            <a class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Empresa</p>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Carrera</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Sobre Nosotros</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Contactanos</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Vendedores</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Programa Afiliacion</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Informacion</p>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Tienda Online</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Politica Privacidad</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Politica Devolucion</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Politica Envio</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Terminos de Servicio</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Track Order</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Servicios</p>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Limpieza</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Entrenamiento Perros</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Veterinaria</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Seguro para mascotas</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Adopcion</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link">Centro de Recursos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2023 <a class="copyright-link">Copyright</a>
+                </p>
+
+                <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method"
+                    class="img" />
+            </div>
+        </div>
+    </footer>
+
+    <!-- INICIO -->
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+    <script src="./assets/js/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
