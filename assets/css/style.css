@@ -1380,7 +1380,7 @@ textarea {
         --section-padding: 50px;
     }
 
-    /**
+    /* /**
    * REUSED STYLE
    */
 
@@ -1443,7 +1443,7 @@ textarea {
 
     .navbar-link {
         color:#000;
-        --fs-6: 1.7rem;
+        --fs-6: 2.3rem;
         font-weight: var(--fw-700);
         transition: var(--transition-1);
         background-color: #fff;
@@ -1451,7 +1451,7 @@ textarea {
 
     .header.active .navbar-link:is(:hover, :focus) {
         color: white;
-        background-color: #fff;
+        background-color: #fff; */
 
     /**
    * HERO
@@ -1569,4 +1569,4 @@ textarea {
     .footer {
         padding-block-start: 40px;
     }
-}
+}}
