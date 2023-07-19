@@ -2,7 +2,7 @@
 
 ### Inmersia 
 
-![INMERSIA LOGO]("https://github.com/Team-8-F5/Inmersia/blob/feature2/images/LOGO.png") 
+![INMERSIA_LOGO]("https://github.com/Team-8-F5/Inmersia/blob/feature2/images/LOGO.png") 
 
 ## Description
 
