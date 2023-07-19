@@ -21,8 +21,8 @@ Easy Navigation: Our user-friendly interface allows you to search, filter, and f
 
 Licensing Options: Choose from various licensing options to meet your specific needs, whether it's for personal or commercial use.
 
-## Tecnologías utilizadas
-- HTML5 y CSS3: for the structure and desing.
+## Used technology
+- HTML5 y CSS3: for the structure and design.
 - Java Script for the funtions,
 ## Setting
 
