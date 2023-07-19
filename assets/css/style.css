@@ -1271,6 +1271,13 @@ textarea {
  * responsive for large than 768px screen
  */
 
+ @media (max-width: 768px) {
+    .header.active {
+        position: fixed;
+        box-shadow: var(--shadow-1);
+        background-color: var(--white); /* Add this line to set a white background */
+    }
+}
 @media (min-width: 768px) {
     /**
    * CUSTOM PROPERTY
@@ -1345,6 +1352,13 @@ textarea {
 /**
  * responsive for large than 992px screen
  */
+ @media (max-width: 992px) {
+    .header.active {
+        position: fixed;
+        box-shadow: var(--shadow-1);
+        background-color: var(--white); /* Add this line to set a white background */
+    }
+}
 
 @media (min-width: 992px) {
     /**
