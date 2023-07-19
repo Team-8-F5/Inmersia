@@ -2,7 +2,7 @@
 
 ### Inmersia 
 
-![INMERSIA_LOGO]("https://github.com/Team-8-F5/Inmersia/blob/feature2/images/LOGO.png") 
+![INMERSIA_LOGO]("https://github.com/Team-8-F5/Inmersia/blob/feature2/images/LOGO.png")
 
 ## Description
 
@@ -60,3 +60,5 @@ If you have any questions or suggestions about this project, you can contact Inm
 
 - Version: 1.0.0
 - Development status: Active. defame
+
+[def]: "https://github.com/Team-8-F5/Inmersia/blob/feature2/images/LOGO.png"
