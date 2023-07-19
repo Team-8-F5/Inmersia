@@ -1,6 +1,6 @@
 ### Inmersia 
 
-![Inmersia logo](Inmersia/images/LOGO.png)
+![Inmersia logo](https://github.com/Team-8-F5/Inmersia/blob/feature2/images/LOGO.png)
 
 
 
