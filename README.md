@@ -21,6 +21,9 @@ Easy Navigation: Our user-friendly interface allows you to search, filter, and f
 
 Licensing Options: Choose from various licensing options to meet your specific needs, whether it's for personal or commercial use.
 
+## Tecnologías utilizadas
+- HTML5 y CSS3: for the structure and desing.
+- Java Script for the funtions,
 ## Setting
 
 Follow these steps to correctly configure the project:
@@ -52,6 +55,17 @@ If you want to contribute to this project, you can follow the steps below:
 1. Fork the repository.
 2. Make your modifications to your own fork.
 3. Submit a pull request to have your changes reviewed.
+
+## Autores
+- [Ana Rodriguez](https://github.com/kayyra)
+- [Wanda Abreu Diaz]()
+- [Rafaela Silveira]()
+- [RAND-YUE MING ZHANG]()
+- [Sol Piquer]()
+- [Sergio Guzman]()
+- [Jumelis Rosales]()
+- [Ivon Madrid]()
+- [Beatriz Cano]()
 
 ## Contact
 
