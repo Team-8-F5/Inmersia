@@ -1,4 +1,4 @@
-![Inmersia_readme](https://github.com/Team-8-F5/Inmersia/blob/feature2/images/LOGO.png)
+![Inmersia_readme]()
 
 ### Inmersia 
 
