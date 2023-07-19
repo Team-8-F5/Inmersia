@@ -1,5 +1,8 @@
+![Inmersia_readme]("README.md")
+
 ### Inmersia 
-![Inmersia_readme]("LOGO.png")
+
+![INMERSIA LOGO](image/LOGO.png)
 
 ## Description
 
