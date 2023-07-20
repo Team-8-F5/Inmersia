@@ -206,3 +206,28 @@ function loadHtml(){
 function clearHtml(){
     containerBuyCart.innerHTML = '';
 }
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const carousel = document.querySelector('.carousel');
+//     const slides = document.querySelector('.carousel-slides');
+//     const slideWidth = carousel.clientWidth;
+//     let slideIndex = 0;
+  
+//     function showSlide(index) {
+//       slides.style.transform = `translateX(-${slideWidth * index}px)`;
+//     }
+  
+//     function nextSlide() {
+//       slideIndex = (slideIndex + 1) % slides.children.length;
+//       showSlide(slideIndex);
+//     }
+  
+//     function startCarousel() {
+//       setInterval(nextSlide, 3000); // Cambiar cada 3 segundos (3000 ms)
+//     }
+  
+//     startCarousel();
+//   });
+  
