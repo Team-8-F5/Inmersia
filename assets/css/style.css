@@ -154,10 +154,13 @@ body {
 }
 
 .section {
-    padding-block: var(--section-padding);
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .has-bg-image {
+    display: flex;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -526,12 +529,16 @@ body {
 \*-----------------------------------*/
 
 .cart{
-    
-    width: 39px;
-    height: 38px;
+    display: flex;
+    flex-direction: row;
+}
+.carts-image{
+    display: flex;
+    height: 200px;
+
 }
 .cart-products{
-    position: absolute!important;
+    display: flex;
     top: 82px;
     right: -18px;
     background-color: #fff;
@@ -558,15 +565,15 @@ body {
     background-color: white;
     text-align: center;
     justify-content: center;
-    gap: 33px;
+    gap: 7px;
 }
 
 .carts{
-    max-width: 360px;
-    height: 400px;
+    max-width: 250px;
+    height: 480px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     padding-bottom: 34px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     background-color: aliceblue;
     border-radius: 12px;
 }
@@ -574,13 +581,14 @@ body {
 
 .titulo-item{
     font-weight: bold;
-    color: #157FE6;
-    font-size: 20px;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 18px;
 }
 
 .carts img{
-    width: 80%;
-    display: block;
+    width: 100%;
+    display: flex;
     margin: 0 auto;
 }
 
@@ -592,45 +600,51 @@ body {
 }
 .carts div p{
     display: flex;
+    align-content: center;
+    justify-content: center;
     justify-content: space-evenly;
-    margin-left: 125px;
+    margin-left: 100px;
     border-radius: 6px;
     width: 30%;
-    font-size: 25px;
+    font-size: 20px;
     top: 0;
     right: 0px;
     background-color:#B457A0;
     color: #fff;
     
 }
-.carts div{
-    position: relative;
-}
+
 .carts a{
+    align-content: center;
+    justify-content: center;
     font-family: system-ui;
-    margin-left: 23px;
+    margin-left: 50px;
     text-decoration: none;
-    background: orangered;
-    padding: 19px 23px;
+    background: rgb(0, 0, 0);
+    padding: 12px 17px;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     border-radius: 6px;
-    width: 86%;
+    width: 60%;
+    
 }
 
 .carts a:hover{
-    background: #fff;
-    color: red;
-    border: solid 2px red;
+    width: 60%;
+    padding: 12px 17px;
+    background: #B457A0;
+    color: rgb(255, 255, 255);
     transition-duration: .3s;
 }
-
+.section-title{
+    font-size: 2.5rem;
+}
 /*float cart*/
 
 .cart-products .item img{
-    width: 115px;
+    width: 1115px;
 }
 
 .cart-products .item{

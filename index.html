@@ -90,26 +90,100 @@
     </header>
     <main>
         <article>
-            <!-- HERO -->
-            <section class="section hero has-bg-image" id="home" aria-label="home"
-                style="background-image: url('./assets/images/hero-banner.jpg')">
-            </section>
 
+            <!-- HERO -->
+            <img class="section hero has-bg-image" id="home" aria-label="home"
+              src= "recursos\imagen-pincipal.png"> 
+             </img>
+
+            <!-- CATEGORY -->
+            <section class="section category" aria-label="category">
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        <span class="span">Top</span> categorias
+                    </h2>
+
+                    <ul class="has-scrollbar">
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-1.jpg" width="330" height="300" loading="lazy"
+                                        alt="Cat Food" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Comida para Gatos</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-2.jpg" width="330" height="300" loading="lazy"
+                                        alt="Cat Toys" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Juguetes para Gatos</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-3.jpg" width="330" height="300" loading="lazy"
+                                        alt="Dog Food" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Comida para Perros</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-4.jpg" width="330" height="300" loading="lazy"
+                                        alt="Dog Toys" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Juguetes para Perros</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/images/category-5.jpg" width="330" height="300" loading="lazy"
+                                        alt="Dog Sumpplements" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Suplementos para Perros</a>
+                                </h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
             <!-- OFERTAS -->
             <section class="section offer" aria-label="offer">
                 <div class="container">
-                    <h2 class="h2 section-title">
-                        Categorias
-                    </h2>
                     <ul class="grid-list">
                         <li>
                             <div class="offer-card has-bg-image img-holder" style="
-                            background-image: url('./images/coliseo.png');
-                            --width: 540;
-                            --height: 374;
-                                 ">
-                                <p class="card-subtitle">Patrimonio Historico</p>
+                    background-image: url('./assets/images/offer-banner-1.jpg');
+                    --width: 540;
+                    --height: 374;
+                ">
+                                <p class="card-subtitle">Golpe de calor en mascotas.</p>
+
                                 <h3 class="h3 card-title">
                                     <span class="span"></span>
                                 </h3>
@@ -120,11 +194,11 @@
 
                         <li>
                             <div class="offer-card has-bg-image img-holder" style="
-                             background-image: url('./images/museo.jpg');
-                            --width: 540;
-                            --height: 374;
-                             ">
-                                <p class="card-subtitle">Patrimonio Moderno</p>
+                    background-image: url('./assets/images/offer-banner-2.jpg');
+                    --width: 540;
+                    --height: 374;
+                ">
+                                <p class="card-subtitle">Tratamientos y Aseo.</p>
 
                                 <h3 class="h3 card-title">
                                     <span class="span"></span>
@@ -133,13 +207,15 @@
                                 <a class="btn">Leer Mas</a>
                             </div>
                         </li>
+
                         <li>
                             <div class="offer-card has-bg-image img-holder" style="
-                            background-image: url('./images/arquitectura.jpg');
-                            --width: 540;
-                            --height: 374;
-                                 ">
-                                <p class="card-subtitle">Aquitectura Avanzada</p>
+                    background-image: url('./assets/images/offer-banner-3.jpg');
+                    --width: 540;
+                    --height: 374;
+                ">
+                                <p class="card-subtitle">Nuestra marca te encantara.</p>
+
                                 <h3 class="h3 card-title">
                                     <span class="span"></span>
                                 </h3>
@@ -150,180 +226,106 @@
                     </ul>
                 </div>
             </section>
-            <!-- PRODUCTOSSOL -->
+
+            <!-- PRODUCTOS -->
             <section class="Productos">
                 <div class="products">
+                    
                     <div class="carts">
-                        <span class="titulo-item">HILLS</span>
+                        <span class="titulo-item">Coliseo de Roma</span>
                         <div>
-                            <img src="recursos/hills.png" alt="">
+                            <img class="carts-image" src="recursos\coliseo.png" alt="">
                         </div>
 
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
+                        <p class="title">Imagen inmersiva 3D <br>
+                            Visita el Coliseo desde la red!</p>
                         <div>
-                            <p><span>20</span>€</p>
-                        </div>
-                        <a href="" data-id="1" class="btn-add-cart">Añadir al carrito</a>
-                    </div>
-                    <div class="carts">
-                        <span class="titulo-item">Iglesia Románica</span>
-                        <div>
-                            <img src="recursos/r1.png" alt="">
-                        </div>
-
-                        <p class="title">Iglesia Románica siglo VI</p>
-                        <div>
-                            <p><span>20</span>€</p>
+                            <p><span>75</span>€</p>
                         </div>
                         <a href="" data-id="2" class="btn-add-cart">Añadir al carrito</a>
                     </div>
                     <div class="carts">
-                        <span class="titulo-item">HILLS</span>
+                        <span class="titulo-item">Adidas Mall</span>
                         <div>
-                            <img src="recursos/hills.png" alt="">
+                            <img class="carts-image" src="recursos/ADIDAS MALL.png" alt="">
                         </div>
 
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
+                        <p class="title">Imagen inmersiva 3D <br>
+                            Visita el Adidas MALL desde la red!</p>
                         <div>
-                            <p><span>20</span>€</p>
+                            <p><span>75</span>€</p>
                         </div>
-                        <a href="" data-id="3" class="btn-add-cart">Añadir al carrito</a>
+                        <a href="" data-id="2" class="btn-add-cart">Añadir al carrito</a>
                     </div>
                     <div class="carts">
-                        <span class="titulo-item">HILLS</span>
+                        <span class="titulo-item">Garni Temple</span>
                         <div>
-                            <img src="recursos/hills.png" alt="">
+                            <img class="carts-image" src="recursos\garni-temple.png" alt="">
                         </div>
 
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
+                        <p class="title">Imagen inmersiva 3D <br>
+                            Visita Garni Temple desde la red!</p>
                         <div>
-                            <p><span>20</span>€</p>
+                            <p><span>60</span>€</p>
                         </div>
                         <a href="" data-id="4" class="btn-add-cart">Añadir al carrito</a>
                     </div>
                     <div class="carts">
-                        <span class="titulo-item">HILLS</span>
+                        <span class="titulo-item">Templo Budista Asakusa</span>
                         <div>
-                            <img src="recursos/hills.png" alt="">
+                            <img class="carts-image" src="recursos\TEMPLO-BUSDISTA-ASAKUSA-TOKIO.jpg" alt="">
                         </div>
 
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
+                        <p class="title">Imagen inmersiva 3D <br>
+                            Visita Asakusa Tokio desde la red!</p>
                         <div>
-                            <p><span>20</span>€</p>
+                            <p><span>59</span>€</p>
                         </div>
-                        <a href="" data-id="5" class="btn-add-cart">Añadir al carrito</a>
+                        <a href="" data-id="4" class="btn-add-cart">Añadir al carrito</a>
                     </div>
                     <div class="carts">
-                        <span class="titulo-item">HILLS</span>
+                        <span class="titulo-item">Lincoln's Inn Chapel</span>
                         <div>
-                            <img src="recursos/hills.png" alt="">
+                            <img class="carts-image" src="recursos\Lincoln's Inn Chapel Undercroft.png" >
                         </div>
 
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
+                        <p class="title">Imagen inmersiva 3D <br>
+                            Visita Lincoln's Inn desde la red!</p>
                         <div>
-                            <p><span>20</span>€</p>
+                            <p><span>60</span>€</p>
                         </div>
-                        <a href="" data-id="6" class="btn-add-cart">Añadir al carrito</a>
+                        <a href="" data-id="4" class="btn-add-cart">Añadir al carrito</a>
                     </div>
                 </div>
             </section>
+
             <!-- SERVICIOS -->
+
             <section class="section service" aria-label="service">
                 <div class="container">
                     <h2 class="h2 section-title">
-                        <span class="span">Lo que tu mascota necesita,</span> cuando lo necesitan.
+                        <span class="span"> Inmersia: ¡Explora el Patrimonio Cultural del Mundo!!</span> tu destino único para experiencias inmersivas.
                     </h2>
 
-                    <ul class="grid-list">
-                        <li>
-                            <div class="service-card">
-                                <figure class="card-icon">
-                                    <img src="./assets/images/service-icon-1.png" width="70" height="70" loading="lazy"
-                                        alt="service icon" />
-                                </figure>
-                                <h3 class="h3 card-title">Envio Gratis</h3>
-                                <p class="card-text">
-                                    Envio gratis en pedidos mayores a € 35.
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="service-card">
-                                <figure class="card-icon">
-                                    <img src="./assets/images/service-icon-2.png" width="70" height="70" loading="lazy"
-                                        alt="service icon" />
-                                </figure>
-
-                                <h3 class="h3 card-title">Devolucion en 30 Dias</h3>
-
-                                <p class="card-text">
-                                    5% de descuento en todos los pedidos
-                                    futuros.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-                                <figure class="card-icon">
-                                    <img src="./assets/images/service-icon-3.png" width="70" height="70" loading="lazy"
-                                        alt="service icon" />
-                                </figure>
-
-                                <h3 class="h3 card-title">Pagos Seguros</h3>
-
-                                <p class="card-text">
-                                    Pago en linea completamente seguro, respetando los
-                                    estandares de seguridad.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-                                <figure class="card-icon">
-                                    <img src="./assets/images/service-icon-4.png" width="70" height="70" loading="lazy"
-                                        alt="service icon" />
-                                </figure>
-
-                                <h3 class="h3 card-title">Soporte 24/7</h3>
-
-                                <p class="card-text">
-                                    Compre en línea para recibir pedidos de más de € 35 enviados
-                                    rápido y gratis.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
+                  
             <!-- CTA -->
-            <section class="cta has-bg-image" aria-label="cta"
-                style="background-image: url('./assets/images/cta-bg.jpg')">
-                <div class="container">
-                    <figure class="cta-banner">
-                        <img src="./assets/images/cta-banner.png" width="900" height="660" loading="lazy" alt="cat"
-                            class="w-100" />
-                    </figure>
+         
 
-                    <div class="cta-content">
-                        <img src="./assets/images/cta-icon.png" width="120" height="35" loading="lazy"
-                            alt="taste guarantee" class="img" />
+                    <div class="video">
+                        <video width="950" height="500" autoplay loop muted>
+                            <source src="recursos/video-inmersia.mov" type="video/mp4">
+                            <!-- Si el formato del video no es compatible, puedes agregar otras fuentes aquí -->
+                        </video>
 
                         <h2 class="h2 section-title">
-                            Pruébalo, ámalo o lo reemplazaremos... ¡Garantizado!
+                            Descubre un mundo de maravillas y tesoros culturales en Inmersia.
                         </h2>
 
                         <p class="section-text">
-                            En Mi Pequeña Mascota, creemos que a tu perro y gato les
-                            encantará su comida tanto que si no lo hacen... te ayudaremos a
-                            encontrar un reemplazo. Esa es nuestra garantía de sabor.
+                            Descubre Perspectivas Únicas: Sumérgete en impresionantes visuales que capturan 
+                            la esencia de las culturas globales, mostrando su belleza, diversidad y singularidad.
+
+
                         </p>
 
                         <a class="btn">Saber Más</a>
