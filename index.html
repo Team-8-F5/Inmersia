@@ -14,6 +14,130 @@
         rel="stylesheet" />
     <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: -10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+        
+            .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            }
+        
+        /* popup2*/
+        .popup2 {
+            display: none;
+            position: fixed;
+            top: -10%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+            .close-btn2 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            }
+        
+        /* popup3*/
+        .popup3 {
+            display: none;
+            position: fixed;
+            top: -10%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+            .close-btn3 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            }
+        
+            /* popup4*/
+        .popup4 {
+            display: none;
+            position: fixed;
+            top: -10%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+            .close-btn4 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            }
+        
+            
+            /* popup5*/
+        .popup5 {
+            display: none;
+            position: fixed;
+            top: -10%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+            .close-btn5 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            }
+        
+            /* popup6*/
+        .popup6 {
+            display: none;
+            position: fixed;
+            top: -10%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+            .close-btn6 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            }
+        </style>
+
 </head>
 
 <body id="top">
@@ -150,90 +274,160 @@
             <!-- PRODUCTOSSOL -->
             <!-- <section id="shop" style="height: 100vh; background-color: #f0f0f0;"> -->
             <section class="section" id="shop">
-
-                <div class="products">
-                    <div class="carts">
-                        <span class="titulo-item">HILLS</span>
-                        <div>
-                            <img src="recursos/hills.png" alt="">
-                        </div>
-
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
-                        <div>
-                            <p><span>20</span>€</p>
-                        </div>
+                <section class="Productos">
+                    <div class="products">
+                        <div class="carts">
+                            <span class="titulo-item">HILLS</span>
+                            <div>
+                                <img src="recursos/hills.png" alt="">
+                            </div>
+    
+                            <p class="title">HILLS PRESCRIPTION DIET <br>
+                                METABOLIC PIENSO PARA PERROS</p>
+    
+                            <div>
+                                <button id="open-popup-btn">
+                                    <p><span>20</span> €</p>
+                                </button>
+                            </div>
+                            <!-- Popup Box -->
+                            <div id="popup-box" class="popup">
+                                <span class="close-btn" onclick="closePopup()">&times;</span>
+                                <h2>Prince Information</h2>
+                                <h3>About this product price</h3>
+                                <h3>The price is 20€.</h3>
+                            </div>
+    
                         <a href="" data-id="1" class="btn-add-cart">Añadir al carrito</a>
-                    </div>
-                    <div class="carts">
-                        <span class="titulo-item">Iglesia Románica</span>
-                        <div>
-                            <img src="recursos/r1.png" alt="">
                         </div>
-
-                        <p class="title">Iglesia Románica siglo VI</p>
-                        <div>
-                            <p><span>20</span>€</p>
+                        <div class="carts">
+                            <span class="titulo-item">Iglesia Románica</span>
+                            <div>
+                                <img src="recursos/r1.png" alt="">
+                            </div>
+    
+                            <p class="title">Iglesia Románica siglo VI</p>
+                            <div>
+                                <button id="open-popup-btn2">
+                                    <p><span>20</span> €</p>
+                                </button>
+                            </div>
+                                <!-- Popup Box -->
+                                <div id="popup-box2" class="popup2">
+                                <span class="close-btn2" onclick="closePopup2()">&times;</span>
+                                <h2>Prince Information2</h2>
+                                <h3>About this product price2</h3>
+                                <h3>The price is 20€.</h3>
+                            </div>
+                            <a href="" data-id="2" class="btn-add-cart">Añadir al carrito</a>
                         </div>
-                        <a href="" data-id="2" class="btn-add-cart">Añadir al carrito</a>
-                    </div>
-                    <div class="carts">
-                        <span class="titulo-item">HILLS</span>
-                        <div>
-                            <img src="recursos/hills.png" alt="">
+                        <div class="carts">
+                            <span class="titulo-item">HILLS</span>
+                            <div>
+                                <img src="recursos/hills.png" alt="">
+                            </div>
+    
+                            <p class="title">HILLS PRESCRIPTION DIET <br>
+                                METABOLIC PIENSO PARA PERROS</p>
+                            <div>
+                                <button id="open-popup-btn3">
+                                    <p><span>20</span> €</p>
+                                </button>
+                            </div>
+                                <!-- Popup Box -->
+                                <div id="popup-box3" class="popup3">
+                                <span class="close-btn3" onclick="closePopup3()">&times;</span>
+                                <h2>Prince Information3</h2>
+                                <h3>About this product price3</h3>
+                                <h3>The price is 20€.</h3>
+                            </div>
+                            <a href="" data-id="3" class="btn-add-cart">Añadir al carrito</a>
                         </div>
-
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
-                        <div>
-                            <p><span>20</span>€</p>
-                        </div>
-                        <a href="" data-id="3" class="btn-add-cart">Añadir al carrito</a>
-                    </div>
-                    <div class="carts">
-                        <span class="titulo-item">HILLS</span>
-                        <div>
-                            <img src="recursos/hills.png" alt="">
-                        </div>
-
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
-                        <div>
-                            <p><span>20</span>€</p>
-                        </div>
+                        <div class="carts">
+                            <span class="titulo-item">HILLS</span>
+                            <div>
+                                <img src="recursos/hills.png" alt="">
+                            </div>
+    
+                            <p class="title">HILLS PRESCRIPTION DIET <br>
+                                METABOLIC PIENSO PARA PERROS</p>
+                            <div>
+                                <img src="recursos/hills.png" alt="">
+                            </div>
+                            <div>
+                                <button id="open-popup-btn4">
+                                    <p><span>20</span> €</p>
+                                </button>
+                            </div>
+                            <!-- Popup Box -->
+                            <div id="popup-box4" class="popup4">
+                                <span class="close-btn4" onclick="closePopup4()">&times;</span>
+                                <h2>Prince Information4</h2>
+                                <h3>About this product price4</h3>
+                                <h3>The price is 20€.</h3>
+                            </div>
+                        
+    
                         <a href="" data-id="4" class="btn-add-cart">Añadir al carrito</a>
+                        </div>
+                        <div class="carts">
+                            <span class="titulo-item">HILLS</span>
+                            <div>
+                                <img src="recursos/hills.png" alt="">
+                            </div>
+    
+                            <p class="title">HILLS PRESCRIPTION DIET <br>
+                                METABOLIC PIENSO PARA PERROS</p>
+                            <div>
+                                <img src="recursos/hills.png" alt="">
+                            </div>
+                            <div>
+                                <button id="open-popup-btn5">
+                                    <p><span>20</span> €</p>
+                                </button>
+                            </div>
+                        
+                        <!-- Popup Box -->
+                        <div id="popup-box5" class="popup5">
+                            <span class="close-btn5" onclick="closePopup5()">&times;</span>
+                            <h2>Prince Information5</h2>
+                            <h3>About this product price5</h3>
+                            <h3>The price is 20€.</h3>
+                        </div>
+                            
+    
+    
+                            <a href="" data-id="5" class="btn-add-cart">Añadir al carrito</a>
+                        </div>
+                        <div class="carts">
+                            <span class="titulo-item">HILLS</span>
+                            <div>
+                                <img src="recursos/hills.png" alt="">
+                            </div>
+    
+                            <p class="title">HILLS PRESCRIPTION DIET <br>
+                                METABOLIC PIENSO PARA PERROS</p>
+                                <div>
+                                    <button id="open-popup-btn6">
+                                        <p><span>20</span> €</p>
+                                    </button>
+                                </div>
+                            
+                            <!-- Popup Box -->
+                            <div id="popup-box6" class="popup6">
+                                <span class="close-btn6" onclick="closePopup6()">&times;</span>
+                                <h2>Prince Information6</h2>
+                                <h3>About this product price6</h3>
+                                <h3>The price is 20€.</h3>
+                            </div>
+    
+                            <a href="" data-id="6" class="btn-add-cart">Añadir al carrito</a>
+                        </div>
                     </div>
-                    <div class="carts">
-                        <span class="titulo-item">HILLS</span>
-                        <div>
-                            <img src="recursos/hills.png" alt="">
-                        </div>
-
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
-                        <div>
-                            <p><span>20</span>€</p>
-                        </div>
-                        <a href="" data-id="5" class="btn-add-cart">Añadir al carrito</a>
+                            
                     </div>
-                    <div class="carts">
-                        <span class="titulo-item">HILLS</span>
-                        <div>
-                            <img src="recursos/hills.png" alt="">
-                        </div>
-
-                        <p class="title">HILLS PRESCRIPTION DIET <br>
-                            METABOLIC PIENSO PARA PERROS</p>
-                        <div>
-                            <p><span>20</span>€</p>
-                        </div>
-                        <a href="" data-id="6" class="btn-add-cart">Añadir al carrito</a>
-                    </div>
-                </div>
-
-                <!-- </section> -->
-                <a href="#top" class="arrow-btn"><ion-icon name="arrow-up"></ion-icon></a>
-            </section>
+                </section>
+                
             <!-- SERVICIOS -->
 
             <section class="section " id="servicios">
@@ -309,123 +503,6 @@
                 </section>
             </section>
 
-            <!-- <section class="section brand" aria-label="brand"> -->
-            <!-- FORMULARIO -->
-
-            <section class="section" id="contacto">
-                <div class="container">
-                    <h2 class="h2 section-title">
-                        <span class="span">Formulario</span> Contacto
-                    </h2>
-                    <div class="contenedorFormulario">
-                        <form action="" method="post" class="formulario" id="formulario">
-                            <!-- Grupo: Nombre -->
-                            <div class="formulario__grupo" id="grupo__nombre">
-                                <label for="nombre" class="formulario__label">Nombre</label>
-                                <div class="formulario__grupo-input">
-                                    <input type="text" class="formulario__input" name="nombre" id="nombre"
-                                        placeholder="John Doe" />
-                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                                    <p class="formulario__input-error">El Nombre tiene que ser de 3 a 40 dígitos y solo
-                                        letras.</p>
-                                </div>
-                                <p class="formulario__input-error">
-                                    El Nombre tiene que ser de 3 a 40 dígitos y solo letras.
-                                </p>
-                            </div>
-
-                            <!-- Grupo: Apellido -->
-                            <div class="formulario__grupo" id="grupo__apellido">
-                                <label for="apellido" class="formulario__label">Apellido</label>
-
-                                <div class="formulario__grupo-input">
-                                    <input type="text" class="formulario__input" name="apellido" id="apellido"
-                                        placeholder="López Ruiz" />
-                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                                    <p class="formulario__input-error">Los Apellidos tiene que ser de 3 a 40 dígitos y
-                                        solo letras.</p>
-                                </div>
-                                <p class="formulario__input-error">
-                                    Los Apellidos tiene que ser de 3 a 40 dígitos y solo letras.
-                                </p>
-                            </div>
-
-                            <!-- Grupo: Teléfono -->
-                            <div class="formulario__grupo" id="grupo__telefono">
-                                <label for="telefono" class="formulario__label">Movil</label>
-
-                                <div class="formulario__grupo-input">
-                                    <input type="tel" class="formulario__input" name="telefono" id="telefono"
-                                        placeholder="654 987 432" />
-                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                                    <p class="formulario__input-error">El telefono solo puede contener numeros y el
-                                        maximo son 14 dígitos.</p>
-                                </div>
-                                <p class="formulario__input-error">
-                                    El telefono solo puede contener numeros y el maximo son 14
-                                    dígitos.
-                                </p>
-                            </div>
-
-                            <!-- Grupo: Correo Electronico -->
-                            <div class="formulario__grupo" id="grupo__correo">
-                                <label for="correo" class="formulario__label">Email</label>
-
-                                <div class="formulario__grupo-input">
-                                    <input type="email" class="formulario__input" name="correo" id="correo"
-                                        placeholder="correo@correo.com" />
-                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                                    <p class="formulario__input-error">El correo solo puede contener letras, numeros,
-                                        puntos, guiones y guion bajo.</p>
-                                </div>
-                                <p class="formulario__input-error">
-                                    El correo solo puede contener letras, numeros, puntos,
-                                    guiones y guion bajo.
-                                </p>
-                            </div>
-
-                            <!-- Grupo: Comentario -->
-                            <div class="formulario__grupo" id="grupo__comentario">
-                                <label for="comentario" class="formulario__label">Comentario</label>
-                                <div class="formulario__grupo-input">
-                                    <textarea class="formulario__input" id="comentario" name="comentario"
-                                        -form="formulario" placeholder="Cuéntanos cómo podemos ayudarte.."></textarea>
-                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                                    <p class="formulario__input-error">El comentario debe tener minimo 5 y maximo 200
-                                        letras.</p>
-                                </div>
-                                <p class="formulario__input-error">
-                                    El comentario debe tener minimo 5 y maximo 200 letras.
-                                </p>
-                            </div>
-
-                            <!-- Grupo: Terminos y Condiciones -->
-                            <div class="formulario__grupo" id="grupo__terminos">
-                                <label class="formulario__label">
-                                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" />
-                                    Acepto los Terminos y Condiciones
-                                </label>
-                            </div>
-
-                            <!-- Grupo: mensaje cuando no rellena formulario -->
-                            <div class="formulario__mensaje" id="formulario__mensaje">
-                                <p>
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                    <b>Error:</b> Por favor rellena el formulario correctamente.
-                                </p>
-                            </div>
-
-                            <!-- Grupo: Boton -->
-                            <div class="formulario__grupo formulario__grupo-btn-enviar">
-                                <button type="submit" class="formulario__btn">Enviar</button>
-                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
-                                    Formulario enviado exitosamente!
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
         </article>
     </main>
 
@@ -516,6 +593,71 @@
     <script src="./assets/js/script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // Open the popup when the button is clicked(first violet 20€ buttonrst vi)
+        document.getElementById("open-popup-btn").addEventListener("click", function () {
+            document.getElementById("popup-box").style.display = "block";
+        });
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup-box").style.display = "none";
+        }
+
+       // second vilote button popup
+        document.getElementById("open-popup-btn2").addEventListener("click", function () {
+            document.getElementById("popup-box2").style.display = "block";
+        });
+
+        // Function to close the popup
+        function closePopup2() {
+            document.getElementById("popup-box2").style.display = "none";
+        }
+
+        // third vilote button popup
+        document.getElementById("open-popup-btn3").addEventListener("click", function () {
+            document.getElementById("popup-box3").style.display = "block";
+        });
+
+        // Function to close the popup
+        function closePopup3() {
+            document.getElementById("popup-box3").style.display = "none";
+        }
+
+        
+        // four vilote button popup
+        document.getElementById("open-popup-btn4").addEventListener("click", function () {
+            document.getElementById("popup-box4").style.display = "block";
+        });
+
+        // Function to close the popup
+        function closePopup4() {
+            document.getElementById("popup-box4").style.display = "none";
+        }
+
+        // five vilote button popup
+        document.getElementById("open-popup-btn5").addEventListener("click", function () {
+            document.getElementById("popup-box5").style.display = "block";
+        });
+
+        // Function to close the popup
+        function closePopup5() {
+            document.getElementById("popup-box5").style.display = "none";
+        }
+
+         // six vilote button popup
+        document.getElementById("open-popup-btn6").addEventListener("click", function () {
+            document.getElementById("popup-box6").style.display = "block";
+        });
+
+        // Function to close the popup
+        function closePopup6() {
+            document.getElementById("popup-box6").style.display = "none";
+        }
+
+</script>
+
 </body>
 
 </html>
