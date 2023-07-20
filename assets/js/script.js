@@ -206,3 +206,20 @@ function loadHtml(){
 function clearHtml(){
     containerBuyCart.innerHTML = '';
 }
+
+
+//navb
+// JavaScript (con jQuery)
+$(document).ready(function() {
+    // Escucha el clic en los enlaces del menú
+    $('a[data-nav-link]').on('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+  
+      var target = $(this).attr('href'); // Obtiene el valor del atributo "href"
+      var offset = $(target).offset().top; // Obtiene la posición de la sección en la página
+  
+      // Desplazamiento suave a la sección
+      $('html, body').animate({ scrollTop: offset }, 800);
+    });
+  });
+  
