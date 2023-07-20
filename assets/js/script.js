@@ -208,12 +208,3 @@ function clearHtml() {
 }
 
 /* alertas */
-// Open the popup when the button is clicked
-document.getElementById("open-popup-btn").addEventListener("click", function () {
-    document.getElementById("popup-box").style.display = "block";
-});
-
-// Function to close the popup
-function closePopup() {
-    document.getElementById("popup-box").style.display = "none";
-}
