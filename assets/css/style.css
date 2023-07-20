@@ -387,7 +387,7 @@ body {
   #HERO
 \*-----------------------------------*/
 
-.hero {
+ .hero {
     margin-block-start: 85px;
     min-height: 360px;
     background-position: left;
@@ -401,6 +401,7 @@ body {
 .hero-text {
     color: var(--white);
     margin-block: 15px 25px;
+  
 }
 
 .hero .btn {
@@ -410,6 +411,8 @@ body {
 .hero .btn:is(:hover, :focus) {
     background-color: var(--portland-orange);
 }
+
+/* Estilos para la sección */
 
 /*-----------------------------------*\
   #CATEGORY
@@ -1131,6 +1134,7 @@ textarea {
         padding-inline-start: 20px;
         justify-content: flex-start;
         align-items: center;
+       
     }
 
     /**
@@ -1296,6 +1300,26 @@ textarea {
         align-items: center;
     }
 }
+/* Estilos para desktop y dispositivos más grandes (por ejemplo, a partir de 768px) */
+@media screen and (min-width: 768px) {
+    .navbar-list .navbar-item {
+        padding: 0 10px; /* Espacio adicional a los lados del enlace */
+        
+    }
+
+    .navbar-link {
+        font-size: 18px; /* Tamaño de fuente más grande para los enlaces */
+        color: #000; /* Color de texto por defecto (negro) */
+        text-decoration: none; /* Quita el subrayado del enlace */
+        transition: background-color 0.3s, color 0.3s; /* Transición suave de los estilos */
+    }
+
+    .navbar-link:hover {
+        background-color: #793e66; /* Color de fondo al pasar el ratón (negro) */
+        color: #fff; /* Color de texto al pasar el ratón (blanco) */
+    }
+}
+
 
 /**
  * responsive for large than 992px screen
@@ -1325,6 +1349,11 @@ textarea {
    * REUSED STYLE
    */
 
+   /* Estilo para la sección de contacto */
+#contacto {
+    padding-top: 80px; /* Ajusta el valor según el tamaño del encabezado fijo */
+}
+
     .container {
         padding-inline: 30px;
     }
@@ -1343,14 +1372,14 @@ textarea {
     }
 
     .header {
-        --color: var(--white);
+        color: black;
         background: none;
     }
 
-    .header.active {
+    /* .header.active {
         --color: var(--black);
         background-color: var(--white);
-    }
+    } */
 
     .header .logo,
     .header .action-btn {
@@ -1377,8 +1406,12 @@ textarea {
     }
 
     .navbar-link {
-        color: var(--color);
+        /* color: var(--color);
         --fs-6: 1.7rem;
+        font-weight: var(--fw-700);
+        transition: var(--transition-1); */
+        color: var(--color);
+        font-size: var(--fs-6); /* Asegura que el tamaño de fuente sea el mismo para todos los enlaces */
         font-weight: var(--fw-700);
         transition: var(--transition-1);
     }
@@ -1390,6 +1423,30 @@ textarea {
     /**
    * HERO
    */
+
+   /* Estilo base para la imagen de fondo */
+.section.hero.has-bg-image {
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen vertical y horizontalmente */
+}
+
+/* Estilos para tablet (por ejemplo, hasta 768px) */
+@media screen and (max-width: 768px) {
+    .section.hero.has-bg-image {
+        height: 300px; /* Ajusta la altura para tablet */
+        margin-top: 100px; /* Ajusta el margen superior para tablet */
+    }
+}
+
+/* Estilos para dispositivos móviles (por ejemplo, hasta 480px) */
+@media screen and (max-width: 480px) {
+    .section.hero.has-bg-image {
+        height: 200px; /* Ajusta la altura para dispositivos móviles */
+        margin-top: 50px; /* Ajusta el margen superior para dispositivos móviles */
+    }
+}
+
 
     .hero {
         margin-block-start: 0;
@@ -1460,6 +1517,24 @@ textarea {
         --fs-1: 15rem;
         --fs-3: 3.2rem;
     }
+
+/* Estilo para la sección de contacto */
+#contacto {
+    padding-top: 80px; /* Ajusta el valor según el tamaño del encabezado fijo */
+}
+
+
+    .navbar-action-btn {
+        display: none;
+        width: 100%;
+    }
+   
+
+    .header {
+        color: black;
+        background: none;
+    }
+
 
     /**
    * REUSED STYLE

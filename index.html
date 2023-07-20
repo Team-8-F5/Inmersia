@@ -32,8 +32,10 @@
                 <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
             </button>
 
-            <a class="logo">Mi Pequeña Mascota</a>
-
+            <a class="logo" href="#home">
+                <img src="assets/images/logo_sinfondo.png" style="width: 50%;">
+            </a>
+            
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
                     <li class="navbar-item">
@@ -41,16 +43,17 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#shop" class="navbar-link" data-nav-link>Productos</a>
+                        <a href="#shop" class="navbar-link" >Productos</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a class="navbar-link" data-nav-link>Noticias</a>
+                        <a href="#colecciones" class="navbar-link" >Colecciones</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a class="navbar-link" data-nav-link>Contacto</a>
+                        <a href="#Contacto" class="navbar-link" >Contacto</a>
                     </li>
+
                 </ul>
 
                 <a class="navbar-action-btn">Log In</a>
@@ -66,7 +69,7 @@
 
                 <div class="header-section container">
                     <div>
-                        <img onclick="showCart(this)" class="cart" src="recursos/cart-shopping-solid.svg" alt="">
+                        <img onclick="showCart(this)" class="cart" src="images/cart-shopping-solid.svg" alt="">
                         <p class="count-product">0</p>
                     </div>
                     <div class="cart-products" id="products-id">
@@ -92,15 +95,16 @@
         <article>
             <!-- HERO -->
             <section class="section hero has-bg-image" id="home" aria-label="home"
-                style="background-image: url('./assets/images/hero-banner.jpg')">
-            </section>
-
+                style="background-image: url('./assets/images/3dtodo.jpg');width:100%; height: 50%; margin-top: 154px;">
+            </section>  
+        -
+       
 
             <!-- OFERTAS -->
-            <section class="section offer" aria-label="offer">
+            <section class="section " id="colecciones">
                 <div class="container">
                     <h2 class="h2 section-title">
-                        Categorias
+                       Colecciones
                     </h2>
                     <ul class="grid-list">
                         <li>
@@ -151,7 +155,7 @@
                 </div>
             </section>
             <!-- PRODUCTOSSOL -->
-            <section class="Productos">
+            <section class="section" id="shop">
                 <div class="products">
                     <div class="carts">
                         <span class="titulo-item">HILLS</span>
@@ -233,7 +237,7 @@
                 </div>
             </section>
             <!-- SERVICIOS -->
-            <section class="section service" aria-label="service">
+            <section class="section " id="servicios">
                 <div class="container">
                     <h2 class="h2 section-title">
                         <span class="span">Lo que tu mascota necesita,</span> cuando lo necesitan.
@@ -302,8 +306,9 @@
                     </ul>
                 </div>
             </section>
+            <!-- <section class="section brand" aria-label="brand"> -->
             <!-- FORMULARIO -->
-            <section class="section brand" aria-label="brand">
+            <section class="section" id="contacto">
                 <div class="container">
                     <h2 class="h2 section-title">
                         <span class="span">Formulario</span> Contacto
@@ -421,7 +426,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+    <footer class="footer" >
         <div class="footer-top section">
             <div class="container">
                 <div class="footer-brand">
