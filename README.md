@@ -1,7 +1,7 @@
 # Inmersia 
 
 ![Inmersia logo](https://github.com/Team-8-F5/Inmersia/blob/feature2/images/LOGO.png)
-## Description
+## Descriptionit 
 
 Welcome to INMERSIA, a unique marketplace that provides a dedicated space for designers and architects to recreate stunning 3D and 2D scenes of patrimonial treasures.Our goal is to offer a wide variety of images of cultural heritage from around the world, created by talented artists and designers. Here you will find unique and high-quality images that reflect the diversity and beauty of global culture.Whether you are a designer, architect, or simply someone who appreciates cultural diversity, INMERSIA is the perfect plataforn to find high-quality resources.
 
@@ -9,7 +9,7 @@ Welcome to INMERSIA, a unique marketplace that provides a dedicated space for de
 
 Diverse Collection: Explore a rich and diverse collection of images that capture the essence of cultural heritage from different corners of the globe.
 
-Talented Artists: Our platform is home to 3D architectural designers who create stunning visual representations of these cultural landmarks.
+Talented Artists: Our platform is home to 3D and 2D     architectural designers who create stunning visual representations of these cultural landmarks.
 
 High-Quality Images: Expect nothing but the best quality images that showcase the beauty and uniqueness of each cultural site.
 
