@@ -806,6 +806,11 @@ p.author a {
 /*-----------------------------------*\
   #SOBRE NOSOTROS
 \*-----------------------------------*/
+#imagen img{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
 
 .historia {
     margin-top: 10px;
