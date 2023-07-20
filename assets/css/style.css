@@ -1289,6 +1289,33 @@ textarea {
     /**
    * FOOTER
    */
+   .footer {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+    display:block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 15px;
+  }
+  .footer-logo {
+    position: relative; /* Para que el contenedor sea el contexto para la posición */
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+  }
+  
+  .footer-logo img {
+    transition: transform 0.3s; /* Animación suave de transición */
+  }
+  
+  .footer-logo:hover img {
+    transform: scale(1.5); /* Aumentar el tamaño de la imagen en un 50% */
+  }
+
+
 
     .footer-bottom .container {
         display: flex;
