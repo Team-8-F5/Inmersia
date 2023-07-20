@@ -264,9 +264,63 @@ body {
     width: 100%;
 }
 
+
+/* estilos flecha */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Asegura un desplazamiento suave hacia las secciones */
+}
+
+/* Estilo para el botón de flecha hacia arriba */
+.arrow-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambia el color de fondo del botón al pasar el ratón por encima */
+.arrow-btn:hover {
+    background-color: #c94ec1;
+}
+.arrow-btn{
+    background-color: #b30ca8;
+}
+
+
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+/* Asegura que el contenido debajo del navbar tenga suficiente espacio para no quedar oculto */
+body {
+    padding-top: 70px; /* Ajusta el valor según la altura del navbar */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Ajusta el color de fondo del navbar según tu diseño */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra para un aspecto más elegante */
+    z-index: 1000; /* Asegura que el navbar esté en la parte superior de otros elementos */
+}
+
+
 
 .action-btn.user {
     display: none;
@@ -318,19 +372,21 @@ body {
 .header-actions {
     display: flex;
     gap: 15px;
+    background-color: #fff;
 }
 
 .header .action-btn {
     position: relative;
     font-size: 22px;
     transition: var(--transition-1);
+    background-color: #fff;
 }
 
 .header .btn-badge {
     position: absolute;
     top: -8px;
     right: -10px;
-    background-color: var(--portland-orange);
+    background-color: white;
     color: var(--white);
     font-size: var(--fs-8);
     min-width: 18px;
@@ -342,6 +398,7 @@ body {
 .nav-toggle-btn:is(:hover, :focus),
 .header .action-btn:is(:hover, :focus) {
     transform: scale(1.1);
+    background-color: white;
 }
 
 .navbar {
@@ -349,7 +406,7 @@ body {
     top: 85px;
     left: -320px;
     bottom: 0;
-    background-color: var(--white);
+    background-color: white;
     max-width: 320px;
     width: 100%;
     padding: 20px 10px;
@@ -362,12 +419,100 @@ body {
 .navbar.active {
     transform: translateX(320px);
     transition-timing-function: var(--cubic-in);
+    background-color: white;
 }
 
 .navbar-link {
     color: var(--eerie-black);
     font-size: var(--fs-6);
     padding: 10px 15px;
+    /* ver color 
+} */
+}
+
+.navbar-action-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: var(--sonic-silver);
+    color: var(--white);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    text-align: center;
+    color:#000;
+    background-color: white;
+} 
+
+/* Estilos para el hover de los enlaces de la navbar */
+.navbar-link:hover {
+    color: white; /* Color de texto blanco en el hover */
+    background-color: #8a2be2; /* Fondo morado en el hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+
+}
+/* Estilos para desktop y dispositivos más grandes (por ejemplo, a partir de 768px) */
+@media screen and (min-width: 768px) {
+    .navbar-list .navbar-item {
+        padding: 0 10px; /* Espacio adicional a los lados del enlace */
+    }
+
+    .navbar-link {
+        font-size: 18px; /* Tamaño de fuente más grande para los enlaces */
+    }
+}
+
+/* Estilos para los enlaces de la navbar */
+.navbar-link {
+    color: var(--eerie-black);
+    font-size: var(--fs-6);
+    padding: 10px 15px;
+    transition: var(--transition-1);
+}
+
+/* Estilo para el hover de los enlaces de la navbar */
+.navbar-link:hover {
+    color: white; /* Color de texto blanco en el hover */
+    background-color: #8a2be2; /* Fondo morado en el hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Otros estilos para el navbar */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding-block: 20px;
+    z-index: 4;
+    box-shadow: var(--shadow-1);
+}
+
+.header.active {
+    position: fixed;
+}
+
+.navbar {
+    position: fixed;
+    top: 85px;
+    left: -320px;
+    bottom: 0;
+    background-color: white;
+    max-width: 320px;
+    width: 100%;
+    padding: 20px 10px;
+    box-shadow: var(--shadow-2);
+    transition: 0.25s var(--cubic-out);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.navbar.active {
+    transform: translateX(320px);
+    transition-timing-function: var(--cubic-in);
+    background-color: white;
 }
 
 .navbar-action-btn {
@@ -382,6 +527,9 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
+
+
+
 
 /*-----------------------------------*\
   #HERO
@@ -411,6 +559,22 @@ body {
 .hero .btn:is(:hover, :focus) {
     background-color: var(--portland-orange);
 }
+
+/* * imagen */ 
+.imagen-container {
+    position: relative; /* Para que el contenedor sea el contexto para la posición */
+    display: inline-block; /*Para que el contenedor se ajuste al tamaño de la imagen*/
+  }
+  
+  .imagen-container img {
+    transition: transform 0.3s; /* Animación suave de transición */
+  }
+  
+  .imagen-container:hover img {
+    transform: scale(1.5); /* Aumentar el tamaño de la imagen en un 50% */
+  }
+/* verlo */
+
 
 /* Estilos para la sección */
 
@@ -507,6 +671,7 @@ body {
     margin: auto;
     align-items: center;
     position: relative;
+    background-color: white;
 }
 .header-section div{
     position: relative;
@@ -1012,7 +1177,8 @@ textarea {
 .contact-item ion-icon {
     flex-shrink: 0;
     font-size: 22px;
-    color: var(--portland-orange);
+    color: var(--portland-white);
+    /* background-color: #793e66; */
 }
 
 .social-list {
@@ -1123,6 +1289,7 @@ textarea {
 
     .grid-list {
         grid-template-columns: 1fr 1fr;
+        background-color: #fff;
     }
 
     /**
@@ -1134,6 +1301,7 @@ textarea {
         padding-inline-start: 20px;
         justify-content: flex-start;
         align-items: center;
+        background-color: #fff;
        
     }
 
@@ -1229,6 +1397,22 @@ textarea {
 /**
  * responsive for large than 768px screen
  */
+ @media (max-width: 768px) {
+    .header.active {
+        position: fixed;
+        box-shadow: var(--shadow-1);
+        background-color: var(--white); /* Add this line to set a white background */
+    }
+
+    .navbar-list .navbar-item {
+        padding: 0 10px; /* Espacio adicional a los lados del enlace */
+    }
+
+    .navbar-link {
+        font-size: 18px; /* Tamaño de fuente más grande para los enlaces */
+    }
+}
+
 
 @media (min-width: 768px) {
     /**
@@ -1301,22 +1485,19 @@ textarea {
     }
 }
 /* Estilos para desktop y dispositivos más grandes (por ejemplo, a partir de 768px) */
-@media screen and (min-width: 768px) {
-    .navbar-list .navbar-item {
-        padding: 0 10px; /* Espacio adicional a los lados del enlace */
-        
-    }
 
-    .navbar-link {
-        font-size: 18px; /* Tamaño de fuente más grande para los enlaces */
-        color: #000; /* Color de texto por defecto (negro) */
-        text-decoration: none; /* Quita el subrayado del enlace */
-        transition: background-color 0.3s, color 0.3s; /* Transición suave de los estilos */
-    }
 
-    .navbar-link:hover {
-        background-color: #793e66; /* Color de fondo al pasar el ratón (negro) */
-        color: #fff; /* Color de texto al pasar el ratón (blanco) */
+
+
+
+/**
+ * responsive for large than 992px screen
+ */
+ @media (max-width: 992px) {
+    .header.active {
+        position: fixed;
+        box-shadow: var(--shadow-1);
+        background-color: var(--white); /* Add this line to set a white background */
     }
 }
 
@@ -1349,10 +1530,7 @@ textarea {
    * REUSED STYLE
    */
 
-   /* Estilo para la sección de contacto */
-#contacto {
-    padding-top: 80px; /* Ajusta el valor según el tamaño del encabezado fijo */
-}
+ 
 
     .container {
         padding-inline: 30px;
@@ -1369,6 +1547,8 @@ textarea {
     .nav-toggle-btn,
     .navbar-action-btn {
         display: none;
+        background-color: #fff;
+        /* verlo el background-color: ; */
     }
 
     .header {
@@ -1376,18 +1556,22 @@ textarea {
         background: none;
     }
 
-    /* .header.active {
+     .header.active {
         --color: var(--black);
         background-color: var(--white);
-    } */
+    } 
+    /* revisar */
 
     .header .logo,
     .header .action-btn {
         color: var(--color);
+        background-color: white;
     }
 
     .header .action-btn.user {
         display: block;
+        color:#000;
+        background-color: #fff;
     }
 
     .logo {
@@ -1398,6 +1582,7 @@ textarea {
     .navbar.active {
         all: unset;
         margin-inline-end: auto;
+        background-color: white;
     }
 
     .navbar-list {
@@ -1406,18 +1591,19 @@ textarea {
     }
 
     .navbar-link {
-        /* color: var(--color);
+        color: var(black);
         --fs-6: 1.7rem;
-        font-weight: var(--fw-700);
-        transition: var(--transition-1); */
-        color: var(--color);
-        font-size: var(--fs-6); /* Asegura que el tamaño de fuente sea el mismo para todos los enlaces */
+      
+        transition: var(--transition-1); 
+       
         font-weight: var(--fw-700);
         transition: var(--transition-1);
+        background-color: white;
     }
 
     .header.active .navbar-link:is(:hover, :focus) {
-        color: var(--portland-orange);
+        color: white;
+        background-color: #fff; 
     }
 
     /**
@@ -1425,11 +1611,11 @@ textarea {
    */
 
    /* Estilo base para la imagen de fondo */
-.section.hero.has-bg-image {
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+/* .section.hero.has-bg-image { */
+    /* background-size: cover; Ajusta el tamaño de la imagen para cubrir todo el contenedor
+    background-repeat: no-repeat; Evita que la imagen se repita
     background-position: center center; /* Centra la imagen vertical y horizontalmente */
-}
+/* } */ 
 
 /* Estilos para tablet (por ejemplo, hasta 768px) */
 @media screen and (max-width: 768px) {
@@ -1519,16 +1705,13 @@ textarea {
     }
 
 /* Estilo para la sección de contacto */
-#contacto {
-    padding-top: 80px; /* Ajusta el valor según el tamaño del encabezado fijo */
-}
 
 
     .navbar-action-btn {
         display: none;
         width: 100%;
     }
-   
+   /* ver */
 
     .header {
         color: black;
@@ -1576,5 +1759,12 @@ textarea {
 
     .footer {
         padding-block-start: 40px;
+    }
+
+
+
+    .a.img.span.button.ion-icon {
+        display: block;
+        color: #000;
     }
 }
