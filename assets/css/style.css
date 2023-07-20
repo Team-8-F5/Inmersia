@@ -1546,4 +1546,22 @@ textarea {
     .footer {
         padding-block-start: 40px;
     }
+
+     /**
+   * SOBRE NOSOTROS
+   */   
+   .historia {
+    font-size: 23px;
+    margin-top: 10px;
+    }
+
+    .listao li{
+        font-size: 22px;
+        margin: 6px;
+    }
+
+   svg{
+    margin: 3rem 0rem 3rem 65rem;  
+}
+
 }
