@@ -471,7 +471,7 @@ body {
 #PRODUCT
 \*-----------------------------------*/
 
-.btnPagar{
+.btnPagar {
     background-color: #e66420;
     width: 100px;
     padding: 10px 20px 10px 20px;
@@ -481,34 +481,36 @@ body {
     font-weight: bold;
 }
 
-.toPay{
+.toPay {
     display: flex;
     justify-content: space-between;
     margin: 10px;
 }
 
-.container{
+.container {
     max-width: 1200px;
     text-align: center;
     margin: auto;
 }
 
-.containerProductos{
+.containerProductos {
     display: flex;
 }
 
 
-.header-section{
+.header-section {
     display: flex;
     justify-content: space-between;
     margin: auto;
     align-items: center;
     position: relative;
 }
-.header-section div{
+
+.header-section div {
     position: relative;
 }
-.header-section p{
+
+.header-section p {
     position: absolute;
     top: -24px;
     right: -8px;
@@ -520,17 +522,19 @@ body {
     font-family: system-ui;
     line-height: 18px;
 }
+
 /*-----------------------------------*\
 #SolCart
 \*-----------------------------------*/
 
-.cart{
-    
+.cart {
+
     width: 39px;
     height: 38px;
 }
-.cart-products{
-    position: absolute!important;
+
+.cart-products {
+    position: absolute !important;
     top: 82px;
     right: -18px;
     background-color: #fff;
@@ -540,17 +544,18 @@ body {
     min-width: 290px;
 }
 
-.cart:hover{
+.cart:hover {
     margin-bottom: 16px;
     transition-duration: .5s;
 }
+
 /*end header*/
 
-.count-product{
+.count-product {
     margin-top: 10px;
 }
 
-.products{
+.products {
     padding: 60px 0px 30px 0px;
     display: flex;
     flex-wrap: wrap;
@@ -560,7 +565,7 @@ body {
     gap: 33px;
 }
 
-.carts{
+.carts {
     max-width: 360px;
     height: 400px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
@@ -571,25 +576,26 @@ body {
 }
 
 
-.titulo-item{
+.titulo-item {
     font-weight: bold;
     color: #157FE6;
     font-size: 20px;
 }
 
-.carts img{
+.carts img {
     width: 80%;
     display: block;
     margin: 0 auto;
 }
 
-.carts p{
+.carts p {
     font-family: system-ui;
     font-weight: 500;
     padding: 0 20px;
     margin-bottom: 24px;
 }
-.carts div p{
+
+.carts div p {
     display: flex;
     justify-content: space-evenly;
     margin-left: 125px;
@@ -598,14 +604,16 @@ body {
     font-size: 25px;
     top: 0;
     right: 0px;
-    background-color:#B457A0;
+    background-color: #B457A0;
     color: #fff;
-    
+
 }
-.carts div{
+
+.carts div {
     position: relative;
 }
-.carts a{
+
+.carts a {
     font-family: system-ui;
     margin-left: 23px;
     text-decoration: none;
@@ -619,7 +627,7 @@ body {
     width: 86%;
 }
 
-.carts a:hover{
+.carts a:hover {
     background: #fff;
     color: red;
     border: solid 2px red;
@@ -628,33 +636,36 @@ body {
 
 /*float cart*/
 
-.cart-products .item img{
+.cart-products .item img {
     width: 115px;
 }
 
-.cart-products .item{
+.cart-products .item {
     display: flex;
     align-items: center;
     border-bottom: solid 2px red;
 }
-.cart-products .item .item-content{
+
+.cart-products .item .item-content {
     margin: 0 19px;
     width: 201px;
 }
-.cart-products .item .item-content h5{
+
+.cart-products .item .item-content h5 {
     margin: 0;
     font-size: 15px;
     font-weight: 400;
     font-family: system-ui;
 }
-.cart-products .item .item-content h6{
+
+.cart-products .item .item-content h6 {
     margin: 0;
     font-size: 13px;
     font-weight: 400;
     font-family: system-ui;
 }
 
-.carrito-item-cantidad{
+.carrito-item-cantidad {
     width: 40px;
     border-radius: 6px;
     border: none;
@@ -663,7 +674,7 @@ body {
     text-align: center;
 }
 
-.restar-cantidad{
+.restar-cantidad {
     background-color: orangered;
     color: aliceblue;
     font-weight: bold;
@@ -671,7 +682,7 @@ body {
     border-radius: 100px;
 }
 
-.sumar-cantidad{
+.sumar-cantidad {
     background-color: orangered;
     color: aliceblue;
     font-weight: bold;
@@ -679,11 +690,11 @@ body {
     border-radius: 100px;
 }
 
-#msgContador{
+#msgContador {
     color: #157FE6;
 }
 
-.cart-products .item span{
+.cart-products .item span {
     background-color: red;
     padding: 0px 5px;
     border-radius: 50%;
@@ -691,20 +702,23 @@ body {
     font-family: system-ui;
     cursor: pointer;
 }
-.cart-products h3{
+
+.cart-products h3 {
     margin-bottom: 0;
 }
-.cart-products .item .item-content h5.cart-price{
+
+.cart-products .item .item-content h5.cart-price {
     font-weight: 700;
 }
 
 /*stye to btn close*/
-p.close-btn{
+p.close-btn {
     top: -4px;
     right: 6px;
     cursor: pointer;
     color: #000;
 }
+
 p.author {
     display: flex;
     justify-content: center;
@@ -712,6 +726,7 @@ p.author {
     margin-top: 3%;
     gap: 7px;
 }
+
 p.author a {
     text-decoration: none;
     font-weight: 700;
@@ -1502,4 +1517,26 @@ textarea {
     .footer {
         padding-block-start: 40px;
     }
+}
+
+/* Style for the popup */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }

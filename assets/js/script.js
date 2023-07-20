@@ -1,11 +1,11 @@
 const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener(type, callback);
+    if (elem.length > 1) {
+        for (let i = 0; i < elem.length; i++) {
+            elem[i].addEventListener(type, callback);
+        }
+    } else {
+        elem.addEventListener(type, callback);
     }
-  } else {
-    elem.addEventListener(type, callback);
-  }
 };
 
 //navbar toggle
@@ -15,15 +15,15 @@ const navbar = document.querySelector("[data-navbar]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
 
 const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  navToggler.classList.toggle("active");
+    navbar.classList.toggle("active");
+    navToggler.classList.toggle("active");
 };
 
 addEventOnElem(navToggler, "click", toggleNavbar);
 
 const closeNavbar = function () {
-  navbar.classList.remove("active");
-  navToggler.classList.remove("active");
+    navbar.classList.remove("active");
+    navToggler.classList.remove("active");
 };
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
@@ -34,20 +34,20 @@ const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 const activeElemOnScroll = function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-    backTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    backTopBtn.classList.remove("active");
-  }
+    if (window.scrollY > 100) {
+        header.classList.add("active");
+        backTopBtn.classList.add("active");
+    } else {
+        header.classList.remove("active");
+        backTopBtn.classList.remove("active");
+    }
 };
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
 
 /*==========================
   ====JAVASCRIPT PRODUCTOS==
-  ==========================*/ 
+  ==========================*/
 
 //variables
 let allContainerCart = document.querySelector('.products');
@@ -65,31 +65,31 @@ let countProduct = 0;
 
 //functions
 
-function mensajePagado(){
-  alert('¡Gracias por la compra!');
+function mensajePagado() {
+    alert('¡Gracias por la compra!');
 }
 
-function showCart(x){
-            document.getElementById("products-id").style.display = "block";
-        }
-        function closeBtn(){
-            document.getElementById("products-id").style.display = "none";
-        }
+function showCart(x) {
+    document.getElementById("products-id").style.display = "block";
+}
+function closeBtn() {
+    document.getElementById("products-id").style.display = "none";
+}
 
 
 loadEventListenrs();
-function loadEventListenrs(){
+function loadEventListenrs() {
     allContainerCart.addEventListener('click', addProduct);
 
     containerBuyCart.addEventListener('click', deleteProduct);
-    
+
     alertPagado.addEventListener('click', mensajePagado);
 }
 
-function addProduct(e){
+function addProduct(e) {
     e.preventDefault();
     if (e.target.classList.contains('btn-add-cart')) {
-        const selectProduct = e.target.parentElement; 
+        const selectProduct = e.target.parentElement;
         readTheContent(selectProduct);
     }
 }
@@ -101,12 +101,12 @@ function deleteProduct(e) {
         buyThings.forEach(value => {
             if (value.id == deleteId) {
                 let priceReduce = parseFloat(value.price) * parseFloat(value.amount);
-                totalCard =  totalCard - priceReduce;
+                totalCard = totalCard - priceReduce;
                 totalCard = totalCard.toFixed(2);
             }
         });
         buyThings = buyThings.filter(product => product.id !== deleteId);
-        
+
         countProduct--;
     }
     //FIX: El contador se quedaba con "1" aunque ubiera 0 productos
@@ -117,7 +117,7 @@ function deleteProduct(e) {
     loadHtml();
 }
 
-function readTheContent(product){
+function readTheContent(product) {
     const infoProduct = {
         image: product.querySelector('div img').src,
         title: product.querySelector('.title').textContent,
@@ -148,10 +148,10 @@ function readTheContent(product){
     //console.log(infoProduct);
 }
 
-function loadHtml(){
+function loadHtml() {
     clearHtml();
     buyThings.forEach(product => {
-        const {image, title, price, amount, id} = product;
+        const { image, title, price, amount, id } = product;
         const row = document.createElement('div');
         row.classList.add('item');
         row.innerHTML = `
@@ -168,7 +168,7 @@ function loadHtml(){
             <span class="delete-product" data-id="${id}">X</span>
         `;
 
-//SUMAR Y RESTAR CANTIDAD 
+        //SUMAR Y RESTAR CANTIDAD 
 
         const plusIcon = row.querySelector('.sumar-cantidad');
         const minusIcon = row.querySelector('.restar-cantidad');
@@ -198,11 +198,22 @@ function loadHtml(){
     priceTotal.innerHTML = totalCard;
     amountProduct.innerHTML = countProduct;
 }
-        containerBuyCart.appendChild(row);
+containerBuyCart.appendChild(row);
 
-        priceTotal.innerHTML = totalCard;
+priceTotal.innerHTML = totalCard;
 
-        amountProduct.innerHTML = countProduct;
-function clearHtml(){
+amountProduct.innerHTML = countProduct;
+function clearHtml() {
     containerBuyCart.innerHTML = '';
+}
+
+/* alertas */
+// Open the popup when the button is clicked
+document.getElementById("open-popup-btn").addEventListener("click", function () {
+    document.getElementById("popup-box").style.display = "block";
+});
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById("popup-box").style.display = "none";
 }

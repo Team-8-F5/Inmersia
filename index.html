@@ -24,14 +24,14 @@
     <!-- 
     - #HEADER
 -->
-<header class="header" data-header>
+    <header class="header" data-header>
         <div class="container">
             <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
                 <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
                 <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
             </button>
 
-            <a class="logo"><img src="./assets/images/Image20230720090031.png"></a>
+            <a class="logo"><img src=""></a>
 
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
@@ -111,7 +111,7 @@
                                 </figure>
 
                                 <h3 class="h3">
-                                    <a class="card-title">Comida para Gatos</a>
+                                    <a class="card-title"><button onclick="myFunction()">Comida para Gatos</button></a>
                                 </h3>
                             </div>
                         </li>
@@ -186,7 +186,7 @@
                                 <h3 class="h3 card-title">
                                     <span class="span"></span>
                                 </h3>
-                                <a href="visitas-virtuales.html"  target="_blank" class="btn">CATÁLOGO</a>
+                                <a href="visitas-virtuales.html" target="_blank" class="btn">CATÁLOGO</a>
                             </div>
                         </li>
 
@@ -202,7 +202,7 @@
                                     <span class="span"></span>
                                 </h3>
 
-                                <a href="ciudad-artes.html"  target="_blank" class="btn">CATÁLOGO</a>
+                                <a href="ciudad-artes.html" target="_blank" class="btn">CATÁLOGO</a>
                             </div>
                         </li>
 
@@ -236,8 +236,20 @@
 
                         <p class="title">HILLS PRESCRIPTION DIET <br>
                             METABOLIC PIENSO PARA PERROS</p>
+
                         <div>
-                            <p><span>20</span>€</p>
+                            <button id="open-popup-btn" onclick="openPopup()">
+                                <p><span>20</span>€</p>
+                            </button>
+
+                            <!-- Popup Box -->
+                         
+                            <div id="popup-box" class="popup">
+                                <span class="close-btn" onclick="closePopup()">&times;</span>
+                                <h2>Price Information</h2>
+                                <p>The price is 20€.</p>
+                            </div>
+
                         </div>
                         <a href="" data-id="1" class="btn-add-cart">Añadir al carrito</a>
                     </div>
@@ -692,6 +704,7 @@
         <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
     </a>
     <script src="./assets/js/script.js" defer></script>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
