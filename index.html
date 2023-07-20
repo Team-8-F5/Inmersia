@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inmersia</title>
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,13 +24,17 @@
                 <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
                 <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
             </button>
-
-            <a class="logo">Inmersia</a>
-
+            <a class="logo" href="#home">
+                <img src="assets/images/logo_sinfondo.png" style="width: 50%;">
+            </a>
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                        <a href="#home" class="navbar-link">Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#colecciones" class="navbar-link" data-nav-link>Colecciones</a>
                     </li>
 
                     <li class="navbar-item">
@@ -39,17 +42,15 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a class="navbar-link" data-nav-link>Noticias</a>
+                        <a href="#servicios" class="navbar-link" data-nav-link>Servicios</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a class="navbar-link" data-nav-link>Contacto</a>
+                        <a href="#contacto" class="navbar-link" data-nav-link>Contacto</a>
                     </li>
                 </ul>
-
                 <a class="navbar-action-btn">Log In</a>
             </nav>
-
             <div class="header-actions">
                 <button class="action-btn" aria-label="Search">
                     <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
@@ -57,10 +58,9 @@
                 <button class="action-btn user" aria-label="User">
                     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
                 </button>
-
                 <div class="header-section container">
                     <div>
-                        <img onclick="showCart(this)" class="cart" src="recursos/cart-shopping-solid.svg" alt="">
+                        <img onclick="showCart(this)" class="cart" src="../images/cart-shopping-solid.svg" alt="">
                         <p class="count-product">0</p>
                     </div>
                     <div class="cart-products" id="products-id">
@@ -74,11 +74,7 @@
                         </div>
                     </div>
 
-                    <!-- <button class="action-btn carrito" aria-label="cart">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                    <span class="btn-badge">0</span>
-                </button> -->
                 </div>
             </div>
     </header>
@@ -86,13 +82,19 @@
         <article>
             <!-- HERO -->
             <section class="section hero has-bg-image" id="home" aria-label="home"
-                style="background-image: url('./assets/images/hero-banner.jpg')">
+                style="background-image: url('./assets/images/bannerprincipal.png')">
             </section>
             <!-- OFERTAS -->
-            <section class="section offer" aria-label="offer">
+            <!-- <section class="section offer" aria-label="offstyle="background-image: url('./assets/images/3dtodo.jpg');width:100er">
+                %; height: 50%; margin-top: 154px;">
+            </section> -->
+            <!-- colecciones -->
+            <!-- <section id="colecciones" style="height: 100vh; background-color: #f0f0f0;"> -->
+            <!-- contenido flecha de section -->
+            <section class="section" id="colecciones">
                 <div class="container">
                     <h2 class="h2 section-title">
-                        Categorias
+                        Colecciones
                     </h2>
                     <ul class="grid-list">
                         <li>
@@ -141,9 +143,14 @@
                         </li>
                     </ul>
                 </div>
+                <a href="#top" class="arrow-btn"><ion-icon name="arrow-up"></ion-icon></a>
+
             </section>
+            <!-- </section> -->
             <!-- PRODUCTOSSOL -->
-            <section class="Productos">
+            <!-- <section id="shop" style="height: 100vh; background-color: #f0f0f0;"> -->
+            <section class="section" id="shop">
+
                 <div class="products">
                     <div class="carts">
                         <span class="titulo-item">HILLS</span>
@@ -223,79 +230,89 @@
                         <a href="" data-id="6" class="btn-add-cart">Añadir al carrito</a>
                     </div>
                 </div>
+
+                <!-- </section> -->
+                <a href="#top" class="arrow-btn"><ion-icon name="arrow-up"></ion-icon></a>
             </section>
             <!-- SERVICIOS -->
-            <section class="section service" aria-label="service">
-                <div class="container">
-                    <h2 class="h2 section-title">
-                        <span class="span">Lo que tu mascota necesita,</span> cuando lo necesitan.
-                    </h2>
 
-                    <ul class="grid-list">
-                        <li>
-                            <div class="service-card">
-                                <figure class="card-icon">
-                                    <img src="./assets/images/service-icon-1.png" width="70" height="70" loading="lazy"
-                                        alt="service icon" />
-                                </figure>
-                                <h3 class="h3 card-title">Envio Gratis</h3>
-                                <p class="card-text">
-                                    Envio gratis en pedidos mayores a € 35.
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="service-card">
-                                <figure class="card-icon">
-                                    <img src="./assets/images/service-icon-2.png" width="70" height="70" loading="lazy"
-                                        alt="service icon" />
-                                </figure>
+            <section class="section " id="servicios">
+                <section id="servicios" style="height: 100vh; background-color: #f0f0f0;">
+                    <!-- conteido de la flecha es la section -->
+                    <div class="container">
+                        <h2 class="h2 section-title">
+                            <span class="span">Lo que tu mascota necesita,</span> cuando lo necesitan.
+                        </h2>
 
-                                <h3 class="h3 card-title">Devolucion en 30 Dias</h3>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="service-card">
+                                    <figure class="card-icon">
+                                        <img src="./assets/images/service-icon-1.png" width="70" height="70"
+                                            loading="lazy" alt="service icon" />
+                                    </figure>
+                                    <h3 class="h3 card-title">Envio Gratis</h3>
+                                    <p class="card-text">
+                                        Envio gratis en pedidos mayores a € 35.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-card">
+                                    <figure class="card-icon">
+                                        <img src="./assets/images/service-icon-2.png" width="70" height="70"
+                                            loading="lazy" alt="service icon" />
+                                    </figure>
 
-                                <p class="card-text">
-                                    5% de descuento en todos los pedidos
-                                    futuros.
-                                </p>
-                            </div>
-                        </li>
+                                    <h3 class="h3 card-title">Devolucion en 30 Dias</h3>
 
-                        <li>
-                            <div class="service-card">
-                                <figure class="card-icon">
-                                    <img src="./assets/images/service-icon-3.png" width="70" height="70" loading="lazy"
-                                        alt="service icon" />
-                                </figure>
+                                    <p class="card-text">
+                                        5% de descuento en todos los pedidos
+                                        futuros.
+                                    </p>
+                                </div>
+                            </li>
 
-                                <h3 class="h3 card-title">Pagos Seguros</h3>
+                            <li>
+                                <div class="service-card">
+                                    <figure class="card-icon">
+                                        <img src="./assets/images/service-icon-3.png" width="70" height="70"
+                                            loading="lazy" alt="service icon" />
+                                    </figure>
 
-                                <p class="card-text">
-                                    Pago en linea completamente seguro, respetando los
-                                    estandares de seguridad.
-                                </p>
-                            </div>
-                        </li>
+                                    <h3 class="h3 card-title">Pagos Seguros</h3>
 
-                        <li>
-                            <div class="service-card">
-                                <figure class="card-icon">
-                                    <img src="./assets/images/service-icon-4.png" width="70" height="70" loading="lazy"
-                                        alt="service icon" />
-                                </figure>
+                                    <p class="card-text">
+                                        Pago en linea completamente seguro, respetando los
+                                        estandares de seguridad.
+                                    </p>
+                                </div>
+                            </li>
 
-                                <h3 class="h3 card-title">Soporte 24/7</h3>
+                            <li>
+                                <div class="service-card">
+                                    <figure class="card-icon">
+                                        <img src="./assets/images/service-icon-4.png" width="70" height="70"
+                                            loading="lazy" alt="service icon" />
+                                    </figure>
 
-                                <p class="card-text">
-                                    Compre en línea para recibir pedidos de más de € 35 enviados
-                                    rápido y gratis.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                                    <h3 class="h3 card-title">Soporte 24/7</h3>
+
+                                    <p class="card-text">
+                                        Compre en línea para recibir pedidos de más de € 35 enviados
+                                        rápido y gratis.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </section>
+
+            <!-- <section class="section brand" aria-label="brand"> -->
             <!-- FORMULARIO -->
-            <section class="section brand" aria-label="brand">
+
+            <section class="section" id="contacto">
                 <div class="container">
                     <h2 class="h2 section-title">
                         <span class="span">Formulario</span> Contacto
@@ -414,93 +431,94 @@
 
     <!-- FOOTER -->
     <footer class="footer" style="background-image: url('./assets/images/footer-bg-fotor.jpg')">
-        <div class="footer-top section">
-            <div class="container">
-                <div class="footer-brand">
-                    <a class="logo">Inmersia</a>
-                    <br>
-                    <p class="footer-text">
-                        Tienes una pregunta, contactanos a:
-                        <a href="mailto:support@gmail.com" class="link">Inmersia@inmersia.com</a>
-                    </p>
+        <footer class="footer">
+            <div class="footer-top section">
+                <div class="container">
+                    <div class="footer-brand">
+                        <a class="logo">Inmersia</a>
+                        <br>
+                        <p class="footer-text">
+                            Tienes una pregunta, contactanos a:
+                            <a href="mailto:support@gmail.com" class="link">Inmersia@inmersia.com</a>
+                        </p>
 
-                    <ul class="contact-list">
-                        <li class="contact-item">
-                            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
 
-                            <address class="address">Barcelona, Madrid, España</address>
+                                <address class="address">Barcelona, Madrid, España</address>
+                            </li>
+
+                            <li class="contact-item">
+                                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                                <a href="tel:+34623567891" class="contact-link">(+34) 623-567-891</a>
+                            </li>
+                        </ul>
+
+                        <ul class="social-list">
+                            <li><a class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a class="social-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+                            <li><a class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Empresa</p>
                         </li>
-
-                        <li class="contact-item">
-                            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-                            <a href="tel:+34623567891" class="contact-link">(+34) 623-567-891</a>
+                        <li>
+                            <a class="footer-link">Sobre Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="footer-link">Programa Afiliacion</a>
                         </li>
                     </ul>
 
-                    <ul class="social-list">
-                        <li><a class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                        <li><a class="social-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
-                        <li><a class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Informacion</p>
+                        </li>
+
+                        <li>
+                            <a class="footer-link">Politica Privacidad</a>
+                        </li>
+                        <li>
+                            <a class="footer-link">Terminos de Servicio</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Servicios</p>
+                        </li>
+                        <li>
+                            <a class="footer-link">Centro de Recursos</a>
+                        </li>
                     </ul>
                 </div>
-
-                <ul class="footer-list">
-                    <li>
-                        <p class="footer-list-title">Empresa</p>
-                    </li>
-                    <li>
-                        <a class="footer-link">Sobre Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="footer-link">Programa Afiliacion</a>
-                    </li>
-                </ul>
-
-                <ul class="footer-list">
-                    <li>
-                        <p class="footer-list-title">Informacion</p>
-                    </li>
-
-                    <li>
-                        <a class="footer-link">Politica Privacidad</a>
-                    </li>
-                    <li>
-                        <a class="footer-link">Terminos de Servicio</a>
-                    </li>
-                </ul>
-
-                <ul class="footer-list">
-                    <li>
-                        <p class="footer-list-title">Servicios</p>
-                    </li>
-                    <li>
-                        <a class="footer-link">Centro de Recursos</a>
-                    </li>
-                </ul>
             </div>
-        </div>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <p class="copyright">
-                    &copy; 2023 <a class="copyright-link">Copyright</a>
-                </p>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="copyright">
+                        &copy; 2023 <a class="copyright-link">Copyright</a>
+                    </p>
 
-                <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method"
-                    class="img" />
+                    <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method"
+                        class="img" />
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- INICIO -->
-    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-    </a>
-    <script src="./assets/js/script.js" defer></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- flecha -->
+        <a href="#home" class="arrow-btn"><ion-icon name="arrow-up"></ion-icon></a>
+
+        <script src="./assets/js/script.js" defer></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

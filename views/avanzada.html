@@ -24,13 +24,17 @@
                 <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
                 <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
             </button>
-
-            <a class="logo">Mi Pequeña Mascota</a>
-
+            <a class="logo" href="#home">
+                <img src="../assets/images/logo_sinfondo.png" style="width: 50%;">
+            </a>
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                        <a href="#home" class="navbar-link">Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#colecciones" class="navbar-link" data-nav-link>Colecciones</a>
                     </li>
 
                     <li class="navbar-item">
@@ -38,17 +42,15 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a class="navbar-link" data-nav-link>Noticias</a>
+                        <a href="#servicios" class="navbar-link" data-nav-link>Servicios</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a class="navbar-link" data-nav-link>Contacto</a>
+                        <a href="#contacto" class="navbar-link" data-nav-link>Contacto</a>
                     </li>
                 </ul>
-
                 <a class="navbar-action-btn">Log In</a>
             </nav>
-
             <div class="header-actions">
                 <button class="action-btn" aria-label="Search">
                     <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
@@ -56,10 +58,9 @@
                 <button class="action-btn user" aria-label="User">
                     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
                 </button>
-
                 <div class="header-section container">
                     <div>
-                        <img onclick="showCart(this)" class="cart" src="../recursos/cart-shopping-solid.svg" alt="">
+                        <img onclick="showCart(this)" class="cart" src="../images/cart-shopping-solid.svg" alt="">
                         <p class="count-product">0</p>
                     </div>
                     <div class="cart-products" id="products-id">
@@ -72,12 +73,6 @@
                             <a class="btnPagar" href="">Pagar</a>
                         </div>
                     </div>
-
-                    <!-- <button class="action-btn carrito" aria-label="cart">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                    <span class="btn-badge">0</span>
-                </button> -->
                 </div>
             </div>
     </header>
