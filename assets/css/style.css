@@ -1136,7 +1136,7 @@ textarea {
 
 .footer {
     background-color: #B457A0;
-    color: var(--battleship-gray);
+    color: #5b0229;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
@@ -1144,7 +1144,7 @@ textarea {
 
 .footer-top {
     padding-block-start: 100px;
-    border-block-end: 1px solid #B457A0;
+    border-block-end: 1px solid #5b0229;
 }
 
 .footer-top .container {
@@ -1153,24 +1153,24 @@ textarea {
 }
 
 .footer .logo {
-    color: #B457A0;
+    color: #5b0229;
     margin-block-end: 10px;
 }
 
 .footer-text {
-    font-size: var(--fs-6);
+    font-size: #5b0229;
     margin-block-end: 25px;
 }
 
 .footer-text .link {
     display: inline-block;
-    color: #B457A0;
+    color: #5b0229;
 }
 
 .contact-item {
     margin-block-end: 15px;
     color: var(--white);
-    font-weight: #B457A0;
+    font-weight:#5b0229;;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -1179,7 +1179,7 @@ textarea {
 .contact-item ion-icon {
     flex-shrink: 0;
     font-size: 22px;
-    color: var(--portland-white);
+    color:#5b0229;
     /* background-color: #793e66; */
 }
 
@@ -1189,7 +1189,7 @@ textarea {
 }
 
 .social-link {
-    background-color: var(--white);
+    background-color:white;
     color: var(--black);
     padding: 12px;
     border-radius: 50%;
@@ -1197,7 +1197,7 @@ textarea {
 }
 
 .social-link:is(:hover, :focus) {
-    background-color: #B457A0;
+    background-color: #5b0229;
     color: var(--white);
 }
 
@@ -1211,14 +1211,16 @@ textarea {
 .footer-link {
     padding-block: 4px;
     transition: var(--transition-1);
+    color: aliceblue;
 }
 
 .footer-link:is(:hover, :focus) {
-    color: #B457A0;
+    color: #5b0229;;
 }
 
 .footer-bottom {
     padding-block: 20px;
+    color: aliceblue;
 }
 
 .copyright {
@@ -1242,7 +1244,7 @@ textarea {
     position: fixed;
     bottom: 10px;
     right: 20px;
-    background-color: var(--portland-orange);
+    background-color: #9c027b;
     color: var(--white);
     font-size: 25px;
     padding: 10px;
@@ -1566,8 +1568,7 @@ textarea {
 
     .header .logo,
     .header .action-btn {
-        color: var(--color);
-        background-color: white;
+        color: #5b0229;
     }
 
     .header .action-btn.user {
