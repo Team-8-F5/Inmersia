@@ -66,14 +66,14 @@ If you want to contribute to this project, you can follow the steps below:
 
 ## Autores
 - [Ana Rodriguez](https://github.com/kayyra)
-- [Wanda Abreu Diaz]()
-- [Rafaela Silveira]()
-- [RAND-YUE MING ZHANG]()
-- [Sol Piquer]()
-- [Sergio Guzman]()
-- [Jumelis Rosales]()
-- [Ivon Madrid]()
-- [Beatriz Cano]()
+- [Wanda Abreu Diaz](https://github.com/Wannda-Abreu)
+- [Rafaela Silveira](https://github.com/todaunabossa)
+- [RAND-YUE MING ZHANG](https://github.com/MoonBrillante)
+- [Sol Piquer](https://github.com/Solpiq)
+- [Sergio Guzman](https://github.com/Sergio-Guzman)
+- [Jumelis Rosales](https://github.com/jumeli)
+- [Ivon Madrid](https://www.linkedin.com/in/ivon-madrid/)
+
 
 ## Contact
 
