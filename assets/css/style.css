@@ -806,6 +806,39 @@ p.author a {
     margin-inline: auto;
 }
 
+
+/*-----------------------------------*\
+  #SOBRE NOSOTROS
+\*-----------------------------------*/
+#imagen img{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+
+.historia {
+    margin-top: 10px;
+}
+
+strong{
+    color: #B457A0;
+}
+
+.banner{
+    margin-top: 15px;
+    background: rgb(180,87,160);
+    background: linear-gradient(90deg, rgba(180,87,160,0.5788690476190477) 0%, 
+rgba(180,87,160,0.48363095238095233) 100%);
+}
+
+.listao li{
+    margin: 6px;
+}
+
+svg{
+    margin: 3rem 0rem 3rem 16rem;  
+}
+
 /*-----------------------------------*\
   #FORMULARIO
 \*-----------------------------------*/
@@ -1287,6 +1320,14 @@ textarea {
         align-items: flex-end;
     }
 
+     /**
+   * SOBRE NOSOTROS
+   */   
+    
+   svg{
+    margin: 3rem 0rem 3rem 32rem;  
+    }
+
     /**
    * FOOTER
    */
@@ -1423,7 +1464,18 @@ textarea {
     .brand .scrollbar-item {
         min-width: 20%;
     }
+        
+    /**
+   * SOBRE NOSOTROS
+   */   
+    
+    svg{
+        margin: 3rem 0rem 3rem 44rem;  
+    }
 
+    /**
+   * FORMULARIO
+   */
     .contenedorFormulario {
         box-shadow: 3px 0px 15px var(--form-color);
         border-radius: 10px;
@@ -1503,4 +1555,22 @@ textarea {
     .footer {
         padding-block-start: 40px;
     }
+
+     /**
+   * SOBRE NOSOTROS
+   */   
+   .historia {
+    font-size: 23px;
+    margin-top: 10px;
+    }
+
+    .listao li{
+        font-size: 22px;
+        margin: 6px;
+    }
+
+   svg{
+    margin: 3rem 0rem 3rem 65rem;  
+}
+
 }
