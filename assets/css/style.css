@@ -1172,7 +1172,7 @@ textarea {
     color: var(--white);
     font-weight:#5b0229;;
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 15px;
 }
 
@@ -1186,6 +1186,7 @@ textarea {
 .social-list {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 .social-link {
