@@ -207,7 +207,7 @@ body {
 
 .section-title .span {
     display: inline;
-    color: var(--portland-orange);
+    color: var(--form-color);
 }
 
 .img-holder {
@@ -807,7 +807,7 @@ p.author a {
 \*-----------------------------------*/
 
 .contenedorFormulario {
-    box-shadow: 3px 0px 30px var(--portland-orange);
+    box-shadow: 3px 0px 30px var(--form-color);
     border-radius: 10px;
     width: 100%;
     margin: auto;
@@ -914,7 +914,7 @@ textarea {
 }
 
 .formulario__btn {
-    background: #e66420;
+    background: #B457A0;
     color: white;
     border: none;
     border-radius: 10px;
@@ -1421,7 +1421,7 @@ textarea {
     }
 
     .contenedorFormulario {
-        box-shadow: 3px 0px 15px var(--portland-orange);
+        box-shadow: 3px 0px 15px var(--form-color);
         border-radius: 10px;
         width: 80%;
         margin: auto;
@@ -1475,7 +1475,7 @@ textarea {
     }
 
     .contenedorFormulario {
-        box-shadow: 3px 0px 15px var(--portland-orange);
+        box-shadow: 3px 0px 15px var(--form-color);
         border-radius: 10px;
         width: 60%;
         margin: auto;
