@@ -83,8 +83,8 @@
                     <div class="formulario__grupo" id="grupo__comentario">
                         <label for="comentario" class="formulario__label">Comentario</label>
                         <div class="formulario__grupo-input">
-                            <textarea class="formulario__input" id="comentario" name="comentario"
-                                -form="formulario" placeholder="Cuéntanos cómo podemos ayudarte.."></textarea>
+                            <textarea class="formulario__input" id="comentario" name="comentario" -form="formulario"
+                                placeholder="Cuéntanos cómo podemos ayudarte.."></textarea>
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             <p class="formulario__input-error">El comentario debe tener minimo 5 y maximo 200
                                 letras.</p>
@@ -99,7 +99,21 @@
                             Acepto los Terminos y Condiciones
                         </label>
                     </div>
-
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p>
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <b>Error:</b> Por favor rellena el formulario correctamente.
+                        </p>
+                    </div>
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                            Formulario enviado exitosamente!
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 
