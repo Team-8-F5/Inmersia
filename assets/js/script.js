@@ -206,5 +206,3 @@ amountProduct.innerHTML = countProduct;
 function clearHtml() {
     containerBuyCart.innerHTML = '';
 }
-
-/* alertas */
