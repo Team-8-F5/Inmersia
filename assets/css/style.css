@@ -807,14 +807,27 @@ p.author a {
   #SOBRE NOSOTROS
 \*-----------------------------------*/
 
-.historia{
-    margin: 6px;
+.historia {
+    margin-top: 10px;
 }
 
 strong{
     color: #B457A0;
 }
 
+.banner{
+    margin-top: 15px;
+}
+
+.listao li{
+    margin: 6px;
+}
+
+.banner{
+    background: rgb(180,87,160);
+    background: linear-gradient(90deg, rgba(180,87,160,0.5788690476190477) 0%, 
+rgba(180,87,160,0.48363095238095233) 100%);
+}
 
 /*-----------------------------------*\
   #FORMULARIO
