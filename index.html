@@ -23,8 +23,9 @@
 </head>
 
 <body id="top">
+<!-- Agrega el input de búsqueda aquí -->
 
-    
+
     <!-- 
     - #HEADER
 -->
@@ -62,7 +63,8 @@
                         <a href="#contacto" class="navbar-link" data-nav-link>Contacto</a>
                     </li>
                 </ul>
-            
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+
                 <a class="navbar-action-btn">Log In</a>
             </nav>
             
@@ -102,12 +104,11 @@
         <article>
 
             <!-- HERO -->
-            <section class="section hero has-bg-image" id="home" aria-label="home"
-                style="background-image: url('./assets/images/3dtodo.jpg');width:100%; height: 50%; margin-top: 154px;">
-            </section>  
-        -
-       
-
+             <section class="section hero has-bg-image" id="home" aria-label="home"
+                style="background-image: url('./images/bannerprincipal.png');width:100%; height: 50%; margin-top: 154px;">
+            </section>   
+        
+   
             <!-- colecciones -->
          
        
@@ -618,7 +619,10 @@
     
 <!-- flecha -->
     <a href="#home" class="arrow-btn"><ion-icon name="arrow-up"></ion-icon></a>
+<!-- Enlaza el archivo "script.js" -->
 
+</body>
+    <script src="/js/buscador.js"></script>  
     <script src="./assets/js/script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

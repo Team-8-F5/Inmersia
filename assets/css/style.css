@@ -1397,6 +1397,8 @@ textarea {
 /**
  * responsive for large than 768px screen
  */
+
+
  @media (max-width: 768px) {
     .header.active {
         position: fixed;
@@ -1411,6 +1413,20 @@ textarea {
     .navbar-link {
         font-size: 18px; /* Tamaño de fuente más grande para los enlaces */
     }
+/* Estilos para el logo en versión mobile */
+/* (No es necesario especificar estilos adicionales, ya que el logo ocupará todo el ancho disponible en la versión mobile) */
+    .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        /* Para centrar el logo horizontalmente */
+        margin: 0 auto;
+        margin-right: 62px;
+    }
+
 }
 
 
